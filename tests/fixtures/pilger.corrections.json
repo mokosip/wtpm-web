@@ -1,0 +1,42 @@
+{
+  "corrections": [
+    {
+      "token": {"start": 44, "text": "Pilger"},
+      "morph": {"Case": "Nom", "Gender": "Masc", "Number": "Sing"},
+      "note": "Subject of 'fühlt', agrees with 'der fremde scheue': nominative singular."
+    },
+    {
+      "token": {"start": 56, "text": "es"},
+      "dep": "sb",
+      "note": "Impersonal subject of 'träuft' once 'golden' is no longer read as subject."
+    },
+    {
+      "token": {"start": 59, "text": "golden"},
+      "pos": "ADJ",
+      "tag": "ADJD",
+      "lemma": "golden",
+      "morph": {"Degree": "Pos"},
+      "dep": "mo",
+      "head": {"start": 74, "text": "träuft"},
+      "note": "Adverbially used adjective modifying 'träuft', not a subjunctive verb form."
+    },
+    {
+      "token": {"start": 66, "text": "von"},
+      "head": {"start": 74, "text": "träuft"},
+      "note": "'von ihm' modifies 'träuft'; an adverbial adjective does not take this PP."
+    },
+    {
+      "token": {"start": 74, "text": "träuft"},
+      "lemma": "träufen",
+      "dep": "oc",
+      "note": "Lemma 'träufen'; the 'wie' clause is the clausal object of 'fühlt'."
+    },
+    {
+      "token": {"start": 96, "text": "Reiche"},
+      "pos": "NOUN",
+      "tag": "NN",
+      "morph": {"Case": "Nom", "Number": "Plur"},
+      "note": "Nominalised adjective in the plural (subject of 'hätten'), not a proper name."
+    }
+  ]
+}

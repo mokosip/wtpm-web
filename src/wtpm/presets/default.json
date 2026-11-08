@@ -1,0 +1,29 @@
+{
+  "tempo": {"beats_per_bar": 4, "steps_per_bar": 16},
+  "profile": {
+    "tempo": {"sentence_words": [3, 24], "bpm": [132, 60]},
+    "variation": {"verb_share": [0.0, 1.0]}
+  },
+  "bars": {"min": 2},
+  "scale": {"root": 0, "intervals": [0, 3, 5, 7, 10]},
+  "function_pos": ["DET", "PRON", "ADP", "SCONJ", "CCONJ", "PART", "AUX"],
+  "pos_degrees": {
+    "NOUN": 0, "PROPN": 0, "VERB": 2, "AUX": 2, "ADJ": 4, "ADV": 3,
+    "DET": 1, "PRON": 1, "ADP": 1, "NUM": 4
+  },
+  "layers": {
+    "puls": {"roles": ["perc", "kick", "snare", "hat"], "samples": 8},
+    "bass": {"roles": ["bass"], "samples": 1, "synth": true, "octave": 3},
+    "motiv": {"roles": ["stab", "lead"], "samples": 1},
+    "boegen": {"roles": ["pad", "drone", "texture", "field"], "samples": 3, "long_only": true},
+    "leitwort": {"roles": ["fx", "perc"], "samples": 3}
+  },
+  "mix": {"puls": 1.0, "bass": 0.708, "motiv": 1.0, "boegen": 0.75, "leitwort": 0.8},
+  "long": {"min_seconds": 1.5, "roles": ["stab", "lead", "pad", "drone", "texture", "noise", "field"]},
+  "puls": {"min_hits": 2, "gain": [0.6, 0.95]},
+  "motif": {
+    "gain": {"function": 0.65, "content": 1.0},
+    "exclude": [["DET", "NOUN"], ["ADJ", "NOUN"], ["PRON", "VERB"], ["PRON", "AUX"]]
+  },
+  "echo": {"room": 0.125, "size": 0.9, "delay": 0.05, "delaytime": 0.2, "delayfeedback": 0.05}
+}
