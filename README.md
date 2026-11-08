@@ -21,6 +21,14 @@
 - Echo notes get their own voices with `room`, `size`, `delay`, `delaytime`, `delayfeedback` and `.orbit(1)`, because Strudel shares effects per orbit.
 - Checked in the browser with `@strudel/web` 1.3.0: for the Pilger text every score event comes back as one Strudel event at the same sixteenth with the same sound, note, gain, length and room.
 
+## Page and server
+
+- Only `/sound` (also `/`): text in, `POST /api/sonify {text, sample_seed}` → `{analysis, score, strudel}`; German only (`de_dep_news_trf`); at most 2000 characters (413 above), empty text 400.
+- `GET /api/samples` gives the Strudel sample map (`base` + sound name → file); the page loads it once with `initStrudel({prebake: () => samples(map, base)})` from `@strudel/web` 1.3.0 (pinned on unpkg).
+- Play evaluates `setcps(…)` + `stack(…).slow(bars)`; stop is `hush()`. Muting a pad or turning the tempo knob evaluates the code again without those voices or with the new `cps`. The dice and the SEED field draw new samples.
+- No Merkliste, no sample banks, no analysis view, no SuperDirt, no Tidal download.
+- Run locally: `PORT=8100 uv run python -m wtpm.server` (`HOST` defaults to 127.0.0.1).
+
 ## Development
 
 - `uv sync`

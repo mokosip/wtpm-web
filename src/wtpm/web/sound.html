@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WTPM · Sound</title>
+  <link rel="stylesheet" href="/sound.css" />
+</head>
+<body>
+  <header class="top">
+    <span>WTPM — SOUND</span>
+    <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL-3.0</a>
+  </header>
+
+  <main class="stage">
+    <div class="sticker" id="sticker"><span id="stickerText">—<br />BPM</span></div>
+
+    <section class="rig">
+      <div class="device">
+        <div class="device-top">
+          <span class="knob-slot"></span>
+          <button class="knob-slot orange mode" id="screenMode" aria-pressed="false" title="Display umschalten: Wiedergabe / Einstellungen (Seed)"></button>
+          <span class="knob-slot dark"></span>
+        </div>
+        <div class="device-head">
+          <div class="brand">
+            <div class="brand-name">W.T.P.M</div>
+            <div class="brand-sub">テキスト・マシン</div>
+          </div>
+          <div class="tempo" id="tempo" role="slider" tabindex="0" aria-label="Tempo in BPM" aria-valuemin="40" aria-valuemax="200" aria-disabled="true" title="Tempo: ziehen, scrollen oder Pfeiltasten · Doppelklick = Texttempo">
+            <div class="dial"><span class="dial-mark" id="tempoMark"></span></div>
+            <span class="tempo-value" id="tempoValue">— BPM</span>
+          </div>
+          <div class="speaker" aria-hidden="true"></div>
+        </div>
+        <div class="screen-tab" id="screenTab">SOUND</div>
+        <div class="screen">
+          <canvas id="scope" width="560" height="120"></canvas>
+          <div class="screen-settings" id="screenSettings" hidden>
+            <label class="lcd-field">
+              <span>SEED</span>
+              <input id="sampleSeed" spellcheck="false" />
+            </label>
+          </div>
+          <div class="screen-row">
+            <span class="screen-box" id="lcdBar">–</span>
+            <span class="screen-box" id="lcdStep">––</span>
+            <span class="screen-status" id="soundStatus">bereit</span>
+            <span class="screen-small" id="lcdSeed"></span>
+          </div>
+        </div>
+        <div class="deck">
+          <div class="transport">
+            <button class="key play" id="play" disabled title="Abspielen (Leertaste)"><span>▶</span></button>
+            <button class="key" id="stop" disabled title="Stopp (Leertaste)"><span>■</span></button>
+            <button class="key" id="reroll" disabled title="Samples neu würfeln"><span>⚄</span></button>
+          </div>
+          <div class="pads" id="pads"></div>
+        </div>
+      </div>
+
+      <div class="sheet">
+        <div class="sheet-spine"></div>
+        <div class="sheet-body">
+          <div class="sheet-head">
+            <span>TEXT</span>
+          </div>
+          <textarea id="text" spellcheck="false" maxlength="2000"></textarea>
+          <div class="sheet-foot">
+            <span class="status" id="status"></span>
+            <button class="pill" id="analyze" title="⌘ + Enter">ANALYSIEREN →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="song" id="song"></section>
+  </main>
+
+  <section class="captions">
+    <p>JEDER VERS WIRD EIN TAKT, JEDES WORT EIN SECHZEHNTEL. FÜNF SPUREN LESEN DEN TEXT AUF IHRE ART: FUNKTIONSWÖRTER, SATZTIEFE, WORTARTEN, BÖGEN UND WIEDERHOLTE LEMMATA.</p>
+    <p>DIE PADS SCHALTEN SPUREN STUMM. LEERTASTE STARTET UND STOPPT, 1–5 SCHALTEN DIE PADS. GEFÜLLTER PUNKT = EINSATZ, STRICH = AUSKLANG.</p>
+    <p>SPIELT IM BROWSER ÜBER STRUDEL MIT DEN DIRT-SAMPLES. DER SAMPLE-SEED BLEIBT BEI NEUEM TEXT GLEICH UND ÄNDERT SICH NUR PER WÜRFEL ODER EINGABE.</p>
+  </section>
+
+  <section class="manual">
+    <div class="manual-tab">HERLEITUNG</div>
+    <ol class="rules" id="soundRules"></ol>
+    <details class="code">
+      <summary>STRUDEL-CODE</summary>
+      <pre id="strudelCode"></pre>
+    </details>
+  </section>
+
+  <script src="https://unpkg.com/@strudel/web@1.3.0"></script>
+  <script src="/sound.js"></script>
+</body>
+</html>
