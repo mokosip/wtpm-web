@@ -11,6 +11,16 @@
 - Rebuild it from the local samplebank roles (`~/tidal/samples/samplebank.json` and its analysis cache): `uv run python -m wtpm.manifest`. Samples missing at the pinned commit are listed under `missing`.
 - The composer draws only from this manifest; the same text and sample seed draw the same samples.
 
+## Strudel export
+
+- `render_strudel(score)` (`src/wtpm/strudel.py`) gives `cps`, `bars` and one voice per layer part: `s("…").note("…").gain("…").clip("…")` over `bars × 16` slots (`~` = rest); simultaneous notes of a layer go to separate voices. The page plays `setcps(cps)` and `stack(voices).slow(bars)`.
+- Pitch: Strudel plays a sample at its own pitch for `note` 36 and a synth `note` as MIDI, so samples get `note + 36` and the bass synth `note + 60` (SuperDirt: note 0 = original sample / middle C).
+- Level: SuperDirt sounds at `gain⁴`, Strudel at `gain`, so the export writes `gain⁴`.
+- Length: Strudel's `clip` multiplies the event (one sixteenth) like SuperDirt's `legato`.
+- Bass: Strudel synth `sawtooth` with `.lpf(600)`.
+- Echo notes get their own voices with `room`, `size`, `delay`, `delaytime`, `delayfeedback` and `.orbit(1)`, because Strudel shares effects per orbit.
+- Checked in the browser with `@strudel/web` 1.3.0: for the Pilger text every score event comes back as one Strudel event at the same sixteenth with the same sound, note, gain, length and room.
+
 ## Development
 
 - `uv sync`
