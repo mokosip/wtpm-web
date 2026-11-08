@@ -11,7 +11,6 @@ from helpers import make_document
 from wtpm.analysis import analyze
 from wtpm.compose import (
     DEFAULT_PRESET,
-    LIVE_EPSILON,
     ComposeError,
     ComposePreset,
     apply_punctuation,
@@ -19,10 +18,8 @@ from wtpm.compose import (
 )
 from wtpm.config import AnalysisConfig
 from wtpm.corrections import load_corrections
-from wtpm.markov import run_markov
 from wtpm.pipeline import Pipeline
 from wtpm.samplebank import SampleRef
-from wtpm.tidal import render_tidal
 
 FIXTURES = Path(__file__).parent / "fixtures"
 PRESET_DATA = json.loads(DEFAULT_PRESET.read_text(encoding="utf-8"))
@@ -154,7 +151,6 @@ def test_tempo_follows_the_mean_sentence_length(pipeline):
     assert [s["tempo"]["bpm"] for s in (short, middle, long)] == [120, 90, 40]
     assert middle["tempo"] == {"bpm": 90, "beats_per_bar": 4, "steps_per_bar": 16, "cps": 0.375}
     assert middle["profile"]["tempo"] == {"sentence_words": 5.0, "norm": 0.375, "bpm": 90}
-    assert render_tidal(short).startswith("setcps (120/60/4)\n")
 
 
 def test_seed_is_reproducible_and_follows_the_text_only(pipeline, pilger, score):
@@ -364,12 +360,6 @@ def test_a_late_motif_is_moved_forward_to_end_inside_its_bar():
     assert [e["step"] - 16 for e in motiv["events"] if e["bar"] == 1] == [8, 10, 12, 14]
 
 
-def test_a_live_chain_sits_where_its_verse_motif_stands():
-    played = live(fixture_analysis(V1, V2, ["DET", "NOUN"], lengths=ALL_LENGTHS), **NO_EXCLUDE)
-    assert [(v["bar"], v["offset"]) for v in played["live_motif"]["verses"]] == [(1, 4), (2, 0)]
-    assert [e["step"] - 16 for e in layer(played, "motiv")["events"] if e["bar"] == 1] == [4, 6]
-
-
 def test_boegen_hold_across_each_crossed_verse_pair(score):
     boegen = layer(score, "boegen")
     summary = [
@@ -501,39 +491,6 @@ def test_sample_seed_stays_the_same_for_every_text_unless_rerolled(pipeline, pil
     assert again["samples"] == rerolls[3]["samples"]
 
 
-BANK = [
-    SampleRef(id=f"bank/test/test_{role}/{n:02d}.wav", path=Path(f"/own/test_{role}/{n:02d}.wav"), duration=duration, role=role, star=False)
-    for role, durations in {"hat": [0.3, 0.5], "stab": [0.2], "pad": [2.5], "drone": [3.0], "texture": [4.0]}.items()
-    for n, duration in enumerate(durations)
-]
-
-
-def test_with_a_bank_every_layer_draws_only_from_it_and_the_rest_stays_silent(pilger):
-    score = compose(pilger, make_preset(), BANK, bank="test")
-    assert (score["bank"], score["silent"]) == ("test", ["bass", "leitwort"])
-    assert layer(score, "bass")["events"] == layer(score, "leitwort")["events"] == []
-    assert all(layer(score, name)["events"] for name in ("puls", "motiv", "boegen"))
-    bank_ids = {s.id for s in BANK}
-    for sample_seed in ("r0", "r1", "r2", "r3"):
-        drawn = compose(pilger, make_preset(), BANK, bank="test", sample_seed=sample_seed)["samples"]
-        assert {s["id"] for s in drawn} <= bank_ids
-        assert {s["role"] for s in drawn if s["layer"] == "puls"} == {"hat"}
-
-
-def test_a_bank_bass_sample_plays_the_bass_in_its_own_register(pilger, score):
-    bass_sample = SampleRef(id="bank/test/test_bass/00.wav", path=Path("/own/test_bass/00.wav"), duration=3.2, role="bass", star=False)
-    played = compose(pilger, make_preset(), [*BANK, bass_sample], bank="test")
-    assert played["silent"] == ["leitwort"]
-    assert [s["id"] for s in played["samples"] if s["layer"] == "bass"] == [bass_sample.id]
-    synth_bass = layer(score, "bass")["events"]
-    sample_bass = layer(played, "bass")["events"]
-    assert [(e["step"], e["note"]) for e in sample_bass] == [(e["step"], e["note"] + 24) for e in synth_bass]
-
-
-def test_without_a_bank_nothing_is_silent(score):
-    assert (score["bank"], score["silent"]) == (None, [])
-
-
 def test_a_layer_without_matching_tagged_samples_is_reported(pilger):
     spec = {kind: durations for kind, durations in LIBRARY_SPEC.items() if kind not in {"texture", "field", "drone"}}
     spec["pad"] = [1.0]
@@ -568,87 +525,9 @@ def test_commas_and_dashes_mark_phrase_boundaries_inside_a_verse(pipeline):
     assert marks == [(0, 5, ",", True), (0, 11, "–", True), (0, 15, ".", False), (1, 15, ".", False)]
 
 
-def live(analysis, **overrides):
-    return compose(analysis, make_preset(**overrides), make_library(), live_motif=True)
-
-
 def note_of(degree, intervals=(0, 3, 5, 7, 10)):
     octave, index = divmod(degree, len(intervals))
     return intervals[index] + 12 * octave
-
-
-def test_live_motif_is_off_unless_requested(score):
-    assert "live_motif" not in score
-
-
-def test_live_chain_is_built_from_the_text_transitions(pilger, score):
-    spec = live(pilger)["live_motif"]
-    assert spec["active"] is True
-    transitions = {
-        tuple(p["values"]): p["count"] / p["denominator"]["count"]
-        for p in pilger["patterns"]
-        if p["type"] == "pos_transition"
-    }
-    states = spec["states"]
-    assert states == sorted({pos for pair in transitions for pos in pair})
-    motifs = layer(score, "motiv")["source"]["motifs"]
-    expected = [
-        {"bar": bar, "start": states.index(motif["values"][0]), "steps": len(motif["values"])}
-        for bar, motif in enumerate(motifs)
-        if bar and motif
-    ]
-    assert expected
-    assert [{key: verse[key] for key in ("bar", "start", "steps")} for verse in spec["verses"]] == expected
-    for verse in spec["verses"]:
-        for index, state in enumerate(states):
-            outgoing = {target: p for (origin, target), p in transitions.items() if origin == state}
-            if outgoing:
-                row = [outgoing.get(target, LIVE_EPSILON) for target in states]
-            else:
-                row = [1.0 if j == verse["start"] else LIVE_EPSILON for j in range(len(states))]
-            assert verse["matrix"][index] == row
-    rank = frequency_rank(pilger)
-    assert spec["degrees"] == [rank[state] for state in states]
-
-
-def test_each_later_verse_draws_its_own_chain(pilger, score):
-    played = live(pilger)
-    spec = played["live_motif"]
-    plain, events = layer(score, "motiv")["events"], layer(played, "motiv")["events"]
-    first = [e for e in events if e["bar"] == 0]
-    assert first
-    assert [(e["step"], e["source"]["pos"], e["gain"], e["note"]) for e in first] == [
-        (e["step"], e["source"]["pos"], e["gain"], e["note"]) for e in plain if e["bar"] == 0
-    ]
-    by_bar = {verse["bar"]: verse for verse in spec["verses"]}
-    for bar in range(1, played["bars"]):
-        got = [e for e in events if e["bar"] == bar]
-        if bar not in by_bar:
-            assert got == []
-            continue
-        verse = by_bar[bar]
-        chain = run_markov(verse["steps"], verse["matrix"], verse["start"], bar)
-        assert [e["source"]["pos"] for e in got] == [spec["states"][i] for i in chain]
-        assert [e["note"] for e in got] == [note_of(spec["degrees"][i]) for i in chain]
-        assert [e["gain"] for e in got] == [_motif_gain(e["source"]["pos"]) for e in got]
-        assert [e["legato"] for e in got] == [2.0] * verse["steps"]
-
-
-def test_a_live_verse_without_a_repeated_sequence_stays_silent():
-    played = live(fixture_analysis(V1, V2, ["INTJ"], lengths=ALL_LENGTHS))
-    assert [verse["bar"] for verse in played["live_motif"]["verses"]] == [1]
-    assert not [e for e in layer(played, "motiv")["events"] if e["bar"] == 2]
-
-
-def test_a_question_still_raises_the_last_chain_note_of_its_bar(pipeline):
-    analysis = pipeline.analyze("Der Hund bellt laut.\nWer ruft den Hund heute?").to_dict()
-    played = live(analysis, **NO_EXCLUDE)
-    (verse,) = [v for v in played["live_motif"]["verses"] if v["bar"] == 1]
-    spec = played["live_motif"]
-    last = max((e for e in layer(played, "motiv")["events"] if e["bar"] == 1), key=lambda e: e["step"])
-    state = run_markov(verse["steps"], verse["matrix"], verse["start"], 1)[-1]
-    assert last["source"]["punctuation"] == ["?"]
-    assert last["note"] == note_of(spec["degrees"][state] + 1)
 
 
 def test_every_event_of_a_marked_bar_records_the_mark_once(pipeline):

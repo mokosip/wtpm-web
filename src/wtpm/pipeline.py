@@ -13,7 +13,7 @@ from .normalise import normalise
 from .schema import Analysis
 
 
-DEFAULT_MODELS = {"de": "de_dep_news_trf", "en": "en_core_web_sm"}
+DEFAULT_MODELS = {"de": "de_dep_news_trf"}
 SENTENCE_FINAL = (".", "!", "?")
 
 

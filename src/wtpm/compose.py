@@ -7,14 +7,12 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
-from .markov import run_markov
 from .samplebank import SampleRef
 
 SCORE_SCHEMA = "wtpm-compose/1"
 DEFAULT_PRESET = Path(__file__).parent / "presets" / "default.json"
 LAYERS = ("puls", "bass", "motiv", "boegen", "leitwort")
 SHARED_LAYER = "puls"
-LIVE_EPSILON = 1e-9
 MIN_SCHEMA = (1, 1)
 LINE_AWARE_TYPES = ("pos_ngram", "dependency")
 
@@ -228,8 +226,6 @@ def compose(
     preset: ComposePreset,
     library: list[SampleRef],
     sample_seed: str | None = None,
-    live_motif: bool = False,
-    bank: str | None = None,
 ) -> dict[str, Any]:
     _validate_input(analysis)
     form, verses = _verses(analysis, preset)
@@ -237,25 +233,20 @@ def compose(
     seed = _seed(analysis)
     profile = _profile(analysis, preset)
     motifs = _verse_motifs(analysis, verses, preset)
-    chain = _live_chain(analysis, motifs) if live_motif else {}
     sample_seed = sample_seed or _hash({"preset": preset.data})
     bass_notes = _bass_notes(verses, tokens, preset)
-    picks, pools = _pick_samples(preset, library, sample_seed, from_bank=bank is not None)
-    silent = [layer for layer in LAYERS if not picks[layer]]
+    picks, pools = _pick_samples(preset, library, sample_seed)
     builders = {
         "puls": lambda: _puls(
             verses, tokens, preset, picks["puls"],
             _puls_variation(sample_seed, profile["variation"]["norm"], len(picks["puls"]), preset),
         ),
         "bass": lambda: {"name": "bass", "events": _bass(bass_notes, preset, picks["bass"])},
-        "motiv": lambda: _motiv(analysis, motifs, preset, picks["motiv"], chain if chain.get("active") else None),
+        "motiv": lambda: _motiv(analysis, motifs, preset, picks["motiv"]),
         "boegen": lambda: {"name": "boegen", "events": _boegen(analysis, verses, tokens, preset, picks["boegen"])},
         "leitwort": lambda: {"name": "leitwort", "events": _leitwort(verses, tokens, preset, picks["leitwort"])},
     }
-    quiet = {"motiv": {"source": {"motifs": motifs}}}
-    layers = [
-        builders[name]() if picks[name] else {"name": name, **quiet.get(name, {}), "events": []} for name in LAYERS
-    ]
+    layers = [builders[name]() for name in LAYERS]
     punctuation = apply_punctuation(layers, _punctuation_marks(analysis, verses, preset), preset)
     _apply_echo(layers, verses, _echo_words(analysis), preset)
     for layer in layers:
@@ -274,11 +265,8 @@ def compose(
         "seed": seed,
         "sample_seed": sample_seed,
         "pools": pools,
-        "bank": bank,
-        "silent": silent,
         "mix": dict(preset.mix),
         "punctuation": punctuation,
-        **({"live_motif": chain} if live_motif else {}),
         "profile": profile,
         "tempo": preset.tempo(profile["tempo"]["bpm"]),
         "scale": {"root": preset.root, "intervals": list(preset.intervals)},
@@ -307,7 +295,7 @@ def compose(
 
 
 def _pick_samples(
-    preset: ComposePreset, library: list[SampleRef], sample_seed: str, from_bank: bool = False
+    preset: ComposePreset, library: list[SampleRef], sample_seed: str
 ) -> tuple[dict[str, list[Pick]], dict[str, int]]:
     picks: dict[str, list[Pick]] = {}
     sizes: dict[str, int] = {}
@@ -317,13 +305,13 @@ def _pick_samples(
             (
                 s
                 for s in library
-                if (from_bank or s.synth == pool.synth)
+                if s.synth == pool.synth
                 and s.role in pool.roles
                 and (not pool.long_only or preset.is_long(s))
             ),
             key=lambda s: s.id,
         )
-        if not candidates and not from_bank:
+        if not candidates:
             kind = "synths" if pool.synth else "samples"
             requirement = f" of at least {preset.long_min_seconds:g} s" if pool.long_only else ""
             raise ComposeError(
@@ -514,43 +502,6 @@ def _verse_motifs(analysis: dict[str, Any], verses, preset: ComposePreset) -> li
     return motifs
 
 
-def _live_chain(analysis: dict[str, Any], motifs) -> dict[str, Any]:
-    later = [motif for motif in motifs if motif is not None and motif["bar"]]
-    if not later:
-        return {"active": False, "reason": "no motif"}
-    transitions: dict[str, dict[str, float]] = {}
-    for pattern in analysis["patterns"]:
-        if pattern["type"] == "pos_transition":
-            first, second = pattern["values"]
-            transitions.setdefault(first, {})[second] = pattern["count"] / pattern["denominator"]["count"]
-    states = sorted(set(transitions) | {target for row in transitions.values() for target in row})
-    rank = _frequency_rank(analysis)
-    verses = []
-    for motif in later:
-        start = states.index(motif["values"][0])
-        matrix = [
-            [transitions[state].get(target, LIVE_EPSILON) for target in states]
-            if state in transitions
-            else [1.0 if index == start else LIVE_EPSILON for index in range(len(states))]
-            for state in states
-        ]
-        verses.append(
-            {
-                "bar": motif["bar"],
-                "start": start,
-                "steps": len(motif["values"]),
-                "offset": motif["offset"],
-                "matrix": matrix,
-            }
-        )
-    return {
-        "active": True,
-        "states": states,
-        "degrees": [rank[state] for state in states],
-        "verses": verses,
-    }
-
-
 def _frequency_rank(analysis: dict[str, Any]) -> dict[str, int]:
     counts: dict[str, int] = {}
     for token in analysis["tokens"]:
@@ -559,38 +510,20 @@ def _frequency_rank(analysis: dict[str, Any]) -> dict[str, int]:
     return {pos: rank for rank, pos in enumerate(sorted(counts, key=lambda pos: (-counts[pos], pos)))}
 
 
-def _motiv(
-    analysis, motifs, preset: ComposePreset, picks: list[Pick], chain: dict[str, Any] | None = None
-) -> dict[str, Any]:
+def _motiv(analysis, motifs, preset: ComposePreset, picks: list[Pick]) -> dict[str, Any]:
     layer: dict[str, Any] = {"name": "motiv", "source": {"motifs": motifs}, "events": []}
-    live = {verse["bar"]: verse for verse in chain["verses"]} if chain is not None else {}
     sample = picks[0]
     degree_of = _frequency_rank(analysis)
     for motif in motifs:
         if motif is None:
             continue
         bar = motif["bar"]
-        if bar in live:
-            verse, states = live[bar], chain["states"]
-            indices = run_markov(verse["steps"], verse["matrix"], verse["start"], bar)
-            sequence = [(states[indices[0]], False, None)] + [
-                (states[after], True, verse["matrix"][before][after])
-                for before, after in zip(indices, indices[1:])
-            ]
-        else:
-            sequence = [(pos, False, None) for pos in motif["values"]]
-        for position, (pos, drawn, probability) in enumerate(sequence):
+        for position, pos in enumerate(motif["values"]):
             layer["events"].append(
                 _event(
                     preset, bar, motif["offset"] + 2 * position, sample.s, degree_of.get(pos, 0),
                     preset.motif_gain["function" if pos in preset.function_pos else "content"], 2,
-                    {
-                        "bar": bar,
-                        "pos": pos,
-                        "degree": degree_of.get(pos, 0),
-                        "drawn": drawn,
-                        "probability": probability,
-                    },
+                    {"bar": bar, "pos": pos, "degree": degree_of.get(pos, 0)},
                 )
             )
     return layer
