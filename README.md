@@ -29,6 +29,11 @@
 - No Merkliste, no sample banks, no analysis view, no SuperDirt, no Tidal download.
 - Run locally: `PORT=8100 uv run python -m wtpm.server` (`HOST` defaults to 127.0.0.1).
 
+## Container
+
+- `docker build -t wtpm-web .` then `docker run -p 8000:8000 wtpm-web`; the server listens on `$PORT` (default 8000) on all interfaces and runs as `nobody`.
+- Torch comes from the PyTorch CPU index on Linux (`tool.uv.sources`), so the image carries no CUDA libraries; it is still about 3 GB (Torch + the German transformer model) and the server needs about 750 MB of memory after the first request.
+
 ## Development
 
 - `uv sync`

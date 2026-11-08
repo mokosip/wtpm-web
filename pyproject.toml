@@ -7,6 +7,7 @@ dependencies = [
     "de-core-news-sm",
     "de-dep-news-trf",
     "spacy>=3.8.18",
+    "torch",
 ]
 
 [dependency-groups]
@@ -28,3 +29,9 @@ pythonpath = ["src", "tests"]
 [tool.uv.sources]
 de-core-news-sm = { url = "https://github.com/explosion/spacy-models/releases/download/de_core_news_sm-3.8.0/de_core_news_sm-3.8.0-py3-none-any.whl" }
 de-dep-news-trf = { url = "https://github.com/explosion/spacy-models/releases/download/de_dep_news_trf-3.8.0/de_dep_news_trf-3.8.0-py3-none-any.whl" }
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
