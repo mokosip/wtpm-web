@@ -123,10 +123,10 @@ async function play() {
   }
   soundStatus("lädt Samples …");
   try {
-    await state.ready;
+    const repl = await state.ready;
     const now = Date.now() / 1000;
     state.clock = { cps: currentCps(), anchor: now, cycle: state.playing ? cycleNow() : 0 };
-    await evaluate(code);
+    await repl.evaluate(code);
     Object.assign(state, { playing: true, slots: state.score.bars * state.score.tempo.steps_per_bar, slot: null });
     el("stop").disabled = false;
     document.body.classList.add("playing");
@@ -144,7 +144,7 @@ async function stop() {
   highlightSlot(null);
   el("stop").disabled = true;
   document.body.classList.remove("playing");
-  hush();
+  (await state.ready).stop();
   soundStatus("gestoppt");
 }
 
