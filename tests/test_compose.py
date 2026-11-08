@@ -54,7 +54,7 @@ def make_preset(**overrides) -> ComposePreset:
 
 
 SYNTHS = [
-    SampleRef(id=f"synth/{name}", path=None, duration=None, role=role, star=False, tags=["synth"], synth=True)
+    SampleRef(id=f"synth/{name}", path=None, duration=None, role=role, synth=True)
     for name, role in (
         ("superkick", "kick"), ("sostoms", "perc"), ("superreese", "bass"), ("super808", "bass"), ("superhammond", "pad"),
     )
@@ -63,7 +63,7 @@ SYNTHS = [
 
 def make_library(spec=None, synths=SYNTHS) -> list[SampleRef]:
     return [
-        SampleRef(id=f"dirt/{kind}/{n}.wav", path=Path(f"/bank/dirt/{kind}/{n}.wav"), duration=duration, role=kind, star=False)
+        SampleRef(id=f"dirt/{kind}/{n}.wav", path=None, duration=duration, role=kind, s=f"{kind}_{n}")
         for kind, durations in (spec or LIBRARY_SPEC).items()
         for n, duration in enumerate(durations)
     ] + list(synths)
@@ -194,15 +194,14 @@ def test_puls_hits_sit_on_the_function_words_of_each_verse(pilger, score):
             assert steps == positions
     events = layer(score, "puls")["events"]
     assert events[0]["gain"] == pytest.approx(0.6 + 0.35 * 3 / 8, abs=1e-4)
-    assert {e["s"] for e in events} == {"wtpm_puls:0"}
+    assert {e["s"] for e in events} == {_picked(score, "puls")[0]["s"]}
 
 
-def test_the_puls_draws_its_samples_into_one_sound_and_plays_the_first(score):
-    puls = [s for s in score["samples"] if s["layer"] == "puls"]
+def test_the_puls_draws_up_to_x_samples_each_under_its_own_name(score):
+    puls = _picked(score, "puls")
     assert PRESET_DATA["layers"]["puls"]["samples"] > len(puls) == 7
-    assert [(s["name"], s["index"], s["s"]) for s in puls] == [("wtpm_puls", k, f"wtpm_puls:{k}") for k in range(7)]
+    assert all(s["s"] == "_".join(s["id"].removeprefix("dirt/").removesuffix(".wav").split("/")) for s in puls)
     assert {s["role"] for s in puls} == {"perc", "kick", "snare"}
-    assert not any(s["superdirt"] for s in puls)
 
 
 FULL_VARIATION = {"variation": {"verb_share": [0.0, 0.01]}}
@@ -220,7 +219,8 @@ def test_the_sample_seed_fixes_which_puls_sample_each_step_of_the_bar_plays(pilg
     assert all(0 <= k < 7 for k in spec["positions"])
     events = layer(varied, "puls")["events"]
     assert len({e["bar"] for e in events}) > 1
-    assert all(e["s"] == f"wtpm_puls:{spec['positions'][e['step'] % 16]}" for e in events)
+    puls = _picked(varied, "puls")
+    assert all(e["s"] == puls[spec["positions"][e["step"] % 16]]["s"] for e in events)
     assert layer(_variation(pilger, "b", [0.0, 0.01]), "puls")["variation"]["positions"] != spec["positions"]
 
 
@@ -268,7 +268,7 @@ def test_bass_is_a_held_bass_synth_that_climbs_with_dependency_depth(score):
     assert [e["step"] for e in bass["events"]] == [8, 30, 38, 58]
     assert [e["legato"] for e in bass["events"]] == [22, 8, 20, 14]
     (picked,) = _picked(score, "bass")
-    assert (picked["synth"], picked["role"], picked["path"], picked["duration"]) == (True, "bass", None, None)
+    assert (picked["synth"], picked["role"], picked["duration"]) == (True, "bass", None)
     assert {e["s"] for e in bass["events"]} == {picked["id"].removeprefix("synth/")} <= {"superreese", "super808"}
     assert score["pools"]["bass"] == 2
 
@@ -370,7 +370,7 @@ def test_boegen_hold_across_each_crossed_verse_pair(score):
     assert all(e["step"] // 16 < (e["step"] + e["legato"]) // 16 for e in boegen["events"])
     assert [e["gain"] for e in boegen["events"]] == pytest.approx([0.9 * 0.75, 0.6 * 0.75, 0.6 * 0.75])
     assert [e["note"] for e in boegen["events"]] == [5, 5, 5]
-    assert [e["s"] for e in boegen["events"]] == ["wtpm_boegen_1:0", "wtpm_boegen_2:0", "wtpm_boegen_3:0"]
+    assert [e["s"] for e in boegen["events"]] == [s["s"] for s in _picked(score, "boegen")]
 
 
 def test_leitwort_is_silent_when_only_function_lemmas_repeat(score):
@@ -402,14 +402,15 @@ def test_an_immediately_repeated_word_echoes_on_the_repetition(pipeline):
 
 def test_leitwort_marks_every_occurrence_of_a_repeated_content_lemma(pipeline):
     text = (Path(__file__).parents[1] / "examples" / "gedicht.txt").read_text(encoding="utf-8")
-    leitwort = layer(run(pipeline.analyze(text).to_dict()), "leitwort")
+    scored = run(pipeline.analyze(text).to_dict())
+    leitwort, picked = layer(scored, "leitwort"), _picked(scored, "leitwort")
     by_lemma: dict[str, list[dict]] = {}
     for event in leitwort["events"]:
         by_lemma.setdefault(event["source"]["lemma"], []).append(event)
     assert list(by_lemma) == ["tragen", "stein", "zählen"]
     for index, (lemma, events) in enumerate(by_lemma.items()):
         assert len(events) == 2
-        assert {e["s"] for e in events} == {f"wtpm_leitwort_{index % 3 + 1}:0"}
+        assert {e["s"] for e in events} == {picked[index % 3]["s"]}
         assert {e["note"] for e in events} == {[0, 3, 5][index]}
 
 

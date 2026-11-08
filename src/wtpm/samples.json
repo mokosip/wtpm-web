@@ -1,0 +1,3575 @@
+{
+ "base": "https://raw.githubusercontent.com/tidalcycles/Dirt-Samples/c74fc80f8db8038f6a33648ffef5ac00a07ad402/",
+ "samples": [
+  {
+   "id": "dirt/808/CB.WAV",
+   "role": "kick",
+   "duration": 1.5000226757369615,
+   "s": "808_CB",
+   "file": "808/CB.WAV"
+  },
+  {
+   "id": "dirt/808/CP.WAV",
+   "role": "perc",
+   "duration": 2.0000226757369615,
+   "s": "808_CP",
+   "file": "808/CP.WAV"
+  },
+  {
+   "id": "dirt/808hc/HC00.WAV",
+   "role": "perc",
+   "duration": 0.5000226757369615,
+   "s": "808hc_HC00",
+   "file": "808hc/HC00.WAV"
+  },
+  {
+   "id": "dirt/808hc/HC10.WAV",
+   "role": "perc",
+   "duration": 0.5000226757369615,
+   "s": "808hc_HC10",
+   "file": "808hc/HC10.WAV"
+  },
+  {
+   "id": "dirt/808hc/HC25.WAV",
+   "role": "perc",
+   "duration": 0.5000226757369615,
+   "s": "808hc_HC25",
+   "file": "808hc/HC25.WAV"
+  },
+  {
+   "id": "dirt/808hc/HC50.WAV",
+   "role": "perc",
+   "duration": 0.5000226757369615,
+   "s": "808hc_HC50",
+   "file": "808hc/HC50.WAV"
+  },
+  {
+   "id": "dirt/808hc/HC75.WAV",
+   "role": "perc",
+   "duration": 0.5000226757369615,
+   "s": "808hc_HC75",
+   "file": "808hc/HC75.WAV"
+  },
+  {
+   "id": "dirt/909/BT0A0A7.WAV",
+   "role": "kick",
+   "duration": 0.28467120181405897,
+   "s": "909_BT0A0A7",
+   "file": "909/BT0A0A7.WAV"
+  },
+  {
+   "id": "dirt/ab/000_ab2closedhh.wav",
+   "role": "hat",
+   "duration": 0.13514739229024944,
+   "s": "ab_000_ab2closedhh",
+   "file": "ab/000_ab2closedhh.wav"
+  },
+  {
+   "id": "dirt/ab/001_ab2crash.wav",
+   "role": "hat",
+   "duration": 4.201179138321995,
+   "s": "ab_001_ab2crash",
+   "file": "ab/001_ab2crash.wav"
+  },
+  {
+   "id": "dirt/ab/002_ab2hit1.wav",
+   "role": "snare",
+   "duration": 3.017482993197279,
+   "s": "ab_002_ab2hit1",
+   "file": "ab/002_ab2hit1.wav"
+  },
+  {
+   "id": "dirt/ab/004_ab2kick1.wav",
+   "role": "kick",
+   "duration": 0.443718820861678,
+   "s": "ab_004_ab2kick1",
+   "file": "ab/004_ab2kick1.wav"
+  },
+  {
+   "id": "dirt/ab/005_ab2kick2.wav",
+   "role": "kick",
+   "duration": 4.33859410430839,
+   "s": "ab_005_ab2kick2",
+   "file": "ab/005_ab2kick2.wav"
+  },
+  {
+   "id": "dirt/ab/006_ab2openhh.wav",
+   "role": "hat",
+   "duration": 3.755827664399093,
+   "s": "ab_006_ab2openhh",
+   "file": "ab/006_ab2openhh.wav"
+  },
+  {
+   "id": "dirt/ab/007_ab2perc1.wav",
+   "role": "perc",
+   "duration": 0.4295691609977324,
+   "s": "ab_007_ab2perc1",
+   "file": "ab/007_ab2perc1.wav"
+  },
+  {
+   "id": "dirt/ab/008_ab2perc2.wav",
+   "role": "perc",
+   "duration": 0.3047619047619048,
+   "s": "ab_008_ab2perc2",
+   "file": "ab/008_ab2perc2.wav"
+  },
+  {
+   "id": "dirt/ab/009_ab2ride.wav",
+   "role": "hat",
+   "duration": 4.295873015873016,
+   "s": "ab_009_ab2ride",
+   "file": "ab/009_ab2ride.wav"
+  },
+  {
+   "id": "dirt/ab/010_ab2snare1.wav",
+   "role": "perc",
+   "duration": 0.4527891156462585,
+   "s": "ab_010_ab2snare1",
+   "file": "ab/010_ab2snare1.wav"
+  },
+  {
+   "id": "dirt/ab/011_ab2snare2.wav",
+   "role": "perc",
+   "duration": 0.3185487528344671,
+   "s": "ab_011_ab2snare2",
+   "file": "ab/011_ab2snare2.wav"
+  },
+  {
+   "id": "dirt/ade/000_011112-bassline.wav",
+   "role": "texture",
+   "duration": 9.933378684807256,
+   "s": "ade_000_011112_bassline",
+   "file": "ade/000_011112-bassline.wav"
+  },
+  {
+   "id": "dirt/ade/002_20020506-01.wav",
+   "role": "texture",
+   "duration": 5.433469387755102,
+   "s": "ade_002_20020506_01",
+   "file": "ade/002_20020506-01.wav"
+  },
+  {
+   "id": "dirt/ade/003_abt.wav",
+   "role": "texture",
+   "duration": 2.972154195011338,
+   "s": "ade_003_abt",
+   "file": "ade/003_abt.wav"
+  },
+  {
+   "id": "dirt/ade/004_fan.wav",
+   "role": "texture",
+   "duration": 3.599092970521542,
+   "s": "ade_004_fan",
+   "file": "ade/004_fan.wav"
+  },
+  {
+   "id": "dirt/ade/006_glass.wav",
+   "role": "perc",
+   "duration": 0.5699773242630386,
+   "s": "ade_006_glass",
+   "file": "ade/006_glass.wav"
+  },
+  {
+   "id": "dirt/ade/007_microsound.wav",
+   "role": "texture",
+   "duration": 8.956734693877552,
+   "s": "ade_007_microsound",
+   "file": "ade/007_microsound.wav"
+  },
+  {
+   "id": "dirt/ade/008_rhythm.wav",
+   "role": "texture",
+   "duration": 6.442086167800453,
+   "s": "ade_008_rhythm",
+   "file": "ade/008_rhythm.wav"
+  },
+  {
+   "id": "dirt/ade/009_rise.wav",
+   "role": "drone",
+   "duration": 3.0,
+   "s": "ade_009_rise",
+   "file": "ade/009_rise.wav"
+  },
+  {
+   "id": "dirt/ades2/001_02.wav",
+   "role": "perc",
+   "duration": 0.12988662131519274,
+   "s": "ades2_001_02",
+   "file": "ades2/001_02.wav"
+  },
+  {
+   "id": "dirt/ades2/002_03.wav",
+   "role": "perc",
+   "duration": 0.12136054421768708,
+   "s": "ades2_002_03",
+   "file": "ades2/002_03.wav"
+  },
+  {
+   "id": "dirt/ades2/003_04.wav",
+   "role": "perc",
+   "duration": 0.17197278911564626,
+   "s": "ades2_003_04",
+   "file": "ades2/003_04.wav"
+  },
+  {
+   "id": "dirt/ades2/004_05.wav",
+   "role": "perc",
+   "duration": 0.13024943310657597,
+   "s": "ades2_004_05",
+   "file": "ades2/004_05.wav"
+  },
+  {
+   "id": "dirt/ades2/005_06.wav",
+   "role": "perc",
+   "duration": 0.08852607709750566,
+   "s": "ades2_005_06",
+   "file": "ades2/005_06.wav"
+  },
+  {
+   "id": "dirt/ades2/006_07.wav",
+   "role": "perc",
+   "duration": 0.18648526077097505,
+   "s": "ades2_006_07",
+   "file": "ades2/006_07.wav"
+  },
+  {
+   "id": "dirt/ades2/007_08.wav",
+   "role": "perc",
+   "duration": 0.07256235827664399,
+   "s": "ades2_007_08",
+   "file": "ades2/007_08.wav"
+  },
+  {
+   "id": "dirt/ades2/008_09.wav",
+   "role": "perc",
+   "duration": 0.11174603174603175,
+   "s": "ades2_008_09",
+   "file": "ades2/008_09.wav"
+  },
+  {
+   "id": "dirt/ades3/01.wav",
+   "role": "perc",
+   "duration": 0.17124716553287983,
+   "s": "ades3_01",
+   "file": "ades3/01.wav"
+  },
+  {
+   "id": "dirt/ades3/02.wav",
+   "role": "texture",
+   "duration": 0.30802721088435375,
+   "s": "ades3_02",
+   "file": "ades3/02.wav"
+  },
+  {
+   "id": "dirt/ades3/03.wav",
+   "role": "texture",
+   "duration": 0.15564625850340136,
+   "s": "ades3_03",
+   "file": "ades3/03.wav"
+  },
+  {
+   "id": "dirt/ades3/04.wav",
+   "role": "texture",
+   "duration": 0.13206349206349208,
+   "s": "ades3_04",
+   "file": "ades3/04.wav"
+  },
+  {
+   "id": "dirt/ades3/05.wav",
+   "role": "texture",
+   "duration": 0.10068027210884353,
+   "s": "ades3_05",
+   "file": "ades3/05.wav"
+  },
+  {
+   "id": "dirt/ades3/06.wav",
+   "role": "texture",
+   "duration": 0.15510204081632653,
+   "s": "ades3_06",
+   "file": "ades3/06.wav"
+  },
+  {
+   "id": "dirt/ades3/07.wav",
+   "role": "texture",
+   "duration": 0.22058956916099773,
+   "s": "ades3_07",
+   "file": "ades3/07.wav"
+  },
+  {
+   "id": "dirt/ades4/04.wav",
+   "role": "perc",
+   "duration": 0.10485260770975056,
+   "s": "ades4_04",
+   "file": "ades4/04.wav"
+  },
+  {
+   "id": "dirt/ades4/06.wav",
+   "role": "perc",
+   "duration": 0.057324263038548755,
+   "s": "ades4_06",
+   "file": "ades4/06.wav"
+  },
+  {
+   "id": "dirt/alex/000_drumx1.wav",
+   "role": "perc",
+   "duration": 3.2,
+   "s": "alex_000_drumx1",
+   "file": "alex/000_drumx1.wav"
+  },
+  {
+   "id": "dirt/alex/001_drumx2.wav",
+   "role": "perc",
+   "duration": 3.2,
+   "s": "alex_001_drumx2",
+   "file": "alex/001_drumx2.wav"
+  },
+  {
+   "id": "dirt/arp/000_arp2.wav",
+   "role": "pad",
+   "duration": 4.2779138321995465,
+   "s": "arp_000_arp2",
+   "file": "arp/000_arp2.wav"
+  },
+  {
+   "id": "dirt/arp/001_arp.wav",
+   "role": "pad",
+   "duration": 5.405532879818594,
+   "s": "arp_001_arp",
+   "file": "arp/001_arp.wav"
+  },
+  {
+   "id": "dirt/arpy/arpy01.wav",
+   "role": "stab",
+   "duration": 0.12458049886621315,
+   "s": "arpy_arpy01",
+   "file": "arpy/arpy01.wav"
+  },
+  {
+   "id": "dirt/arpy/arpy02.wav",
+   "role": "stab",
+   "duration": 0.13077097505668933,
+   "s": "arpy_arpy02",
+   "file": "arpy/arpy02.wav"
+  },
+  {
+   "id": "dirt/arpy/arpy03.wav",
+   "role": "stab",
+   "duration": 0.1313605442176871,
+   "s": "arpy_arpy03",
+   "file": "arpy/arpy03.wav"
+  },
+  {
+   "id": "dirt/arpy/arpy04.wav",
+   "role": "stab",
+   "duration": 0.13551020408163264,
+   "s": "arpy_arpy04",
+   "file": "arpy/arpy04.wav"
+  },
+  {
+   "id": "dirt/arpy/arpy05.wav",
+   "role": "stab",
+   "duration": 0.14378684807256237,
+   "s": "arpy_arpy05",
+   "file": "arpy/arpy05.wav"
+  },
+  {
+   "id": "dirt/arpy/arpy06.wav",
+   "role": "stab",
+   "duration": 0.1313605442176871,
+   "s": "arpy_arpy06",
+   "file": "arpy/arpy06.wav"
+  },
+  {
+   "id": "dirt/arpy/arpy07.wav",
+   "role": "stab",
+   "duration": 0.1384580498866213,
+   "s": "arpy_arpy07",
+   "file": "arpy/arpy07.wav"
+  },
+  {
+   "id": "dirt/arpy/arpy08.wav",
+   "role": "stab",
+   "duration": 0.1272108843537415,
+   "s": "arpy_arpy08",
+   "file": "arpy/arpy08.wav"
+  },
+  {
+   "id": "dirt/arpy/arpy09.wav",
+   "role": "stab",
+   "duration": 0.12959183673469388,
+   "s": "arpy_arpy09",
+   "file": "arpy/arpy09.wav"
+  },
+  {
+   "id": "dirt/arpy/arpy10.wav",
+   "role": "stab",
+   "duration": 0.1319501133786848,
+   "s": "arpy_arpy10",
+   "file": "arpy/arpy10.wav"
+  },
+  {
+   "id": "dirt/arpy/arpy11.wav",
+   "role": "stab",
+   "duration": 0.12603174603174602,
+   "s": "arpy_arpy11",
+   "file": "arpy/arpy11.wav"
+  },
+  {
+   "id": "dirt/auto/000_break-kick.wav",
+   "role": "perc",
+   "duration": 0.3,
+   "s": "auto_000_break_kick",
+   "file": "auto/000_break-kick.wav"
+  },
+  {
+   "id": "dirt/auto/002_break-sd.wav",
+   "role": "perc",
+   "duration": 0.3,
+   "s": "auto_002_break_sd",
+   "file": "auto/002_break-sd.wav"
+  },
+  {
+   "id": "dirt/auto/004_kick.wav",
+   "role": "kick",
+   "duration": 0.6,
+   "s": "auto_004_kick",
+   "file": "auto/004_kick.wav"
+  },
+  {
+   "id": "dirt/auto/005_kick-ambient.wav",
+   "role": "texture",
+   "duration": 2.4,
+   "s": "auto_005_kick_ambient",
+   "file": "auto/005_kick-ambient.wav"
+  },
+  {
+   "id": "dirt/auto/006_sd.wav",
+   "role": "perc",
+   "duration": 0.6,
+   "s": "auto_006_sd",
+   "file": "auto/006_sd.wav"
+  },
+  {
+   "id": "dirt/auto/007_sd-ambient.wav",
+   "role": "texture",
+   "duration": 2.4,
+   "s": "auto_007_sd_ambient",
+   "file": "auto/007_sd-ambient.wav"
+  },
+  {
+   "id": "dirt/bass/000_bass1.wav",
+   "role": "bass",
+   "duration": 0.3250793650793651,
+   "s": "bass_000_bass1",
+   "file": "bass/000_bass1.wav"
+  },
+  {
+   "id": "dirt/bass/001_bass2.wav",
+   "role": "bass",
+   "duration": 0.24090702947845805,
+   "s": "bass_001_bass2",
+   "file": "bass/001_bass2.wav"
+  },
+  {
+   "id": "dirt/bass/002_bass3.wav",
+   "role": "bass",
+   "duration": 0.2640362811791383,
+   "s": "bass_002_bass3",
+   "file": "bass/002_bass3.wav"
+  },
+  {
+   "id": "dirt/bass/003_bass4.wav",
+   "role": "bass",
+   "duration": 0.31927437641723355,
+   "s": "bass_003_bass4",
+   "file": "bass/003_bass4.wav"
+  },
+  {
+   "id": "dirt/bass0/000_0.wav",
+   "role": "kick",
+   "duration": 0.24997732426303854,
+   "s": "bass0_000_0",
+   "file": "bass0/000_0.wav"
+  },
+  {
+   "id": "dirt/bass0/001_1.wav",
+   "role": "bass",
+   "duration": 0.5,
+   "s": "bass0_001_1",
+   "file": "bass0/001_1.wav"
+  },
+  {
+   "id": "dirt/bass0/002_2.wav",
+   "role": "bass",
+   "duration": 0.5,
+   "s": "bass0_002_2",
+   "file": "bass0/002_2.wav"
+  },
+  {
+   "id": "dirt/bass1/18076__daven__01-sb-bass-hit-c.wav",
+   "role": "bass",
+   "duration": 2.0375510204081633,
+   "s": "bass1_18076__daven__01_sb_bass_hit_c",
+   "file": "bass1/18076__daven__01-sb-bass-hit-c.wav"
+  },
+  {
+   "id": "dirt/bass1/18077__daven__02-sb-bass-hit-c.wav",
+   "role": "bass",
+   "duration": 2.0985034013605444,
+   "s": "bass1_18077__daven__02_sb_bass_hit_c",
+   "file": "bass1/18077__daven__02-sb-bass-hit-c.wav"
+  },
+  {
+   "id": "dirt/bass1/18078__daven__03-sb-bass-hit-c.wav",
+   "role": "bass",
+   "duration": 2.0475283446712016,
+   "s": "bass1_18078__daven__03_sb_bass_hit_c",
+   "file": "bass1/18078__daven__03-sb-bass-hit-c.wav"
+  },
+  {
+   "id": "dirt/bass1/18079__daven__04-sb-bass-hit-c.wav",
+   "role": "bass",
+   "duration": 2.020136054421769,
+   "s": "bass1_18079__daven__04_sb_bass_hit_c",
+   "file": "bass1/18079__daven__04-sb-bass-hit-c.wav"
+  },
+  {
+   "id": "dirt/bass1/18080__daven__05-sb-bass-hit-c.wav",
+   "role": "bass",
+   "duration": 1.956281179138322,
+   "s": "bass1_18080__daven__05_sb_bass_hit_c",
+   "file": "bass1/18080__daven__05-sb-bass-hit-c.wav"
+  },
+  {
+   "id": "dirt/bass1/18081__daven__06-sb-bass-hit-c.wav",
+   "role": "bass",
+   "duration": 1.967891156462585,
+   "s": "bass1_18081__daven__06_sb_bass_hit_c",
+   "file": "bass1/18081__daven__06-sb-bass-hit-c.wav"
+  },
+  {
+   "id": "dirt/bass1/18082__daven__07-sb-bass-hit-c.wav",
+   "role": "bass",
+   "duration": 1.09859410430839,
+   "s": "bass1_18082__daven__07_sb_bass_hit_c",
+   "file": "bass1/18082__daven__07-sb-bass-hit-c.wav"
+  },
+  {
+   "id": "dirt/bass1/18083__daven__08-sb-bass-hit-c.wav",
+   "role": "bass",
+   "duration": 1.061360544217687,
+   "s": "bass1_18083__daven__08_sb_bass_hit_c",
+   "file": "bass1/18083__daven__08-sb-bass-hit-c.wav"
+  },
+  {
+   "id": "dirt/bass1/18084__daven__09-sb-bass-hit-c.wav",
+   "role": "bass",
+   "duration": 1.1058503401360544,
+   "s": "bass1_18084__daven__09_sb_bass_hit_c",
+   "file": "bass1/18084__daven__09-sb-bass-hit-c.wav"
+  },
+  {
+   "id": "dirt/bass1/18085__daven__10-sb-bass-hit-c.wav",
+   "role": "bass",
+   "duration": 0.18503401360544217,
+   "s": "bass1_18085__daven__10_sb_bass_hit_c",
+   "file": "bass1/18085__daven__10-sb-bass-hit-c.wav"
+  },
+  {
+   "id": "dirt/bass1/18086__daven__11-sb-bass-hit-c.wav",
+   "role": "bass",
+   "duration": 0.6429024943310657,
+   "s": "bass1_18086__daven__11_sb_bass_hit_c",
+   "file": "bass1/18086__daven__11-sb-bass-hit-c.wav"
+  },
+  {
+   "id": "dirt/bass1/18087__daven__12-sb-bass-hit-c.wav",
+   "role": "bass",
+   "duration": 0.6370975056689342,
+   "s": "bass1_18087__daven__12_sb_bass_hit_c",
+   "file": "bass1/18087__daven__12-sb-bass-hit-c.wav"
+  },
+  {
+   "id": "dirt/bass1/18088__daven__13-sb-bass-hit-c.wav",
+   "role": "bass",
+   "duration": 0.6022675736961451,
+   "s": "bass1_18088__daven__13_sb_bass_hit_c",
+   "file": "bass1/18088__daven__13-sb-bass-hit-c.wav"
+  },
+  {
+   "id": "dirt/bass1/18089__daven__14-sb-bass-hit-c.wav",
+   "role": "bass",
+   "duration": 0.09832199546485261,
+   "s": "bass1_18089__daven__14_sb_bass_hit_c",
+   "file": "bass1/18089__daven__14-sb-bass-hit-c.wav"
+  },
+  {
+   "id": "dirt/bass1/18090__daven__15-sb-bass-hit-c.wav",
+   "role": "bass",
+   "duration": 3.152108843537415,
+   "s": "bass1_18090__daven__15_sb_bass_hit_c",
+   "file": "bass1/18090__daven__15-sb-bass-hit-c.wav"
+  },
+  {
+   "id": "dirt/bass1/18091__daven__16-sb-bass-hit-c.wav",
+   "role": "bass",
+   "duration": 0.5616326530612245,
+   "s": "bass1_18091__daven__16_sb_bass_hit_c",
+   "file": "bass1/18091__daven__16-sb-bass-hit-c.wav"
+  },
+  {
+   "id": "dirt/bass1/18092__daven__17-sb-bass-hit-c.wav",
+   "role": "bass",
+   "duration": 0.6356462585034014,
+   "s": "bass1_18092__daven__17_sb_bass_hit_c",
+   "file": "bass1/18092__daven__17-sb-bass-hit-c.wav"
+  },
+  {
+   "id": "dirt/bass1/18093__daven__18-sb-bass-hit-c.wav",
+   "role": "bass",
+   "duration": 2.269750566893424,
+   "s": "bass1_18093__daven__18_sb_bass_hit_c",
+   "file": "bass1/18093__daven__18-sb-bass-hit-c.wav"
+  },
+  {
+   "id": "dirt/bass1/18094__daven__19-sb-bass-hit-f.wav",
+   "role": "bass",
+   "duration": 4.847165532879819,
+   "s": "bass1_18094__daven__19_sb_bass_hit_f",
+   "file": "bass1/18094__daven__19-sb-bass-hit-f.wav"
+  },
+  {
+   "id": "dirt/bass1/18095__daven__20-sb-bass-hit-f.wav",
+   "role": "bass",
+   "duration": 4.876190476190477,
+   "s": "bass1_18095__daven__20_sb_bass_hit_f",
+   "file": "bass1/18095__daven__20-sb-bass-hit-f.wav"
+  },
+  {
+   "id": "dirt/bass1/18096__daven__21-sb-bass-hit-f.wav",
+   "role": "bass",
+   "duration": 0.20680272108843537,
+   "s": "bass1_18096__daven__21_sb_bass_hit_f",
+   "file": "bass1/18096__daven__21-sb-bass-hit-f.wav"
+  },
+  {
+   "id": "dirt/bass1/18097__daven__22-sb-bass-hit-f.wav",
+   "role": "bass",
+   "duration": 1.4398639455782314,
+   "s": "bass1_18097__daven__22_sb_bass_hit_f",
+   "file": "bass1/18097__daven__22-sb-bass-hit-f.wav"
+  },
+  {
+   "id": "dirt/bass1/18098__daven__23-sb-bass-hit-f.wav",
+   "role": "bass",
+   "duration": 0.514467120181406,
+   "s": "bass1_18098__daven__23_sb_bass_hit_f",
+   "file": "bass1/18098__daven__23-sb-bass-hit-f.wav"
+  },
+  {
+   "id": "dirt/bass1/18099__daven__24-sb-bass-hit-f.wav",
+   "role": "bass",
+   "duration": 0.59718820861678,
+   "s": "bass1_18099__daven__24_sb_bass_hit_f",
+   "file": "bass1/18099__daven__24-sb-bass-hit-f.wav"
+  },
+  {
+   "id": "dirt/bass1/18100__daven__25-sb-bass-hit-f.wav",
+   "role": "bass",
+   "duration": 0.41360544217687073,
+   "s": "bass1_18100__daven__25_sb_bass_hit_f",
+   "file": "bass1/18100__daven__25-sb-bass-hit-f.wav"
+  },
+  {
+   "id": "dirt/bass1/18101__daven__26-sb-bass-hit-f.wav",
+   "role": "bass",
+   "duration": 3.6062131519274376,
+   "s": "bass1_18101__daven__26_sb_bass_hit_f",
+   "file": "bass1/18101__daven__26-sb-bass-hit-f.wav"
+  },
+  {
+   "id": "dirt/bass1/18102__daven__27-sb-bass-hit-f.wav",
+   "role": "bass",
+   "duration": 4.164671201814059,
+   "s": "bass1_18102__daven__27_sb_bass_hit_f",
+   "file": "bass1/18102__daven__27-sb-bass-hit-f.wav"
+  },
+  {
+   "id": "dirt/bass1/18103__daven__28-sb-bass-hit-f.wav",
+   "role": "bass",
+   "duration": 4.171065759637188,
+   "s": "bass1_18103__daven__28_sb_bass_hit_f",
+   "file": "bass1/18103__daven__28-sb-bass-hit-f.wav"
+  },
+  {
+   "id": "dirt/bass1/18104__daven__29-sb-bass-hit-f.wav",
+   "role": "bass",
+   "duration": 9.802448979591837,
+   "s": "bass1_18104__daven__29_sb_bass_hit_f",
+   "file": "bass1/18104__daven__29-sb-bass-hit-f.wav"
+  },
+  {
+   "id": "dirt/bass1/18105__daven__30-sb-bass-hit-f.wav",
+   "role": "bass",
+   "duration": 2.6844444444444444,
+   "s": "bass1_18105__daven__30_sb_bass_hit_f",
+   "file": "bass1/18105__daven__30-sb-bass-hit-f.wav"
+  },
+  {
+   "id": "dirt/bass2/69988__noizemassacre__hardcore-bass-1.wav",
+   "role": "bass",
+   "duration": 1.7187528344671201,
+   "s": "bass2_69988__noizemassacre__hardcore_bass_1",
+   "file": "bass2/69988__noizemassacre__hardcore-bass-1.wav"
+  },
+  {
+   "id": "dirt/bass2/69989__noizemassacre__hardcore-bass-2.wav",
+   "role": "bass",
+   "duration": 1.7187528344671201,
+   "s": "bass2_69989__noizemassacre__hardcore_bass_2",
+   "file": "bass2/69989__noizemassacre__hardcore-bass-2.wav"
+  },
+  {
+   "id": "dirt/bass2/69990__noizemassacre__hardcore-bass-3.wav",
+   "role": "bass",
+   "duration": 1.7187528344671201,
+   "s": "bass2_69990__noizemassacre__hardcore_bass_3",
+   "file": "bass2/69990__noizemassacre__hardcore-bass-3.wav"
+  },
+  {
+   "id": "dirt/bass2/69991__noizemassacre__hardcore-bass-4.wav",
+   "role": "bass",
+   "duration": 1.7187528344671201,
+   "s": "bass2_69991__noizemassacre__hardcore_bass_4",
+   "file": "bass2/69991__noizemassacre__hardcore-bass-4.wav"
+  },
+  {
+   "id": "dirt/bass2/69992__noizemassacre__hardcore-bass-5.wav",
+   "role": "bass",
+   "duration": 1.7187528344671201,
+   "s": "bass2_69992__noizemassacre__hardcore_bass_5",
+   "file": "bass2/69992__noizemassacre__hardcore-bass-5.wav"
+  },
+  {
+   "id": "dirt/bass3/83245__zgump__bass-0201.wav",
+   "role": "bass",
+   "duration": 1.7142857142857142,
+   "s": "bass3_83245__zgump__bass_0201",
+   "file": "bass3/83245__zgump__bass-0201.wav"
+  },
+  {
+   "id": "dirt/bass3/83246__zgump__bass-0202.wav",
+   "role": "bass",
+   "duration": 1.0384580498866214,
+   "s": "bass3_83246__zgump__bass_0202",
+   "file": "bass3/83246__zgump__bass-0202.wav"
+  },
+  {
+   "id": "dirt/bass3/83247__zgump__bass-0203.wav",
+   "role": "bass",
+   "duration": 1.0384580498866214,
+   "s": "bass3_83247__zgump__bass_0203",
+   "file": "bass3/83247__zgump__bass-0203.wav"
+  },
+  {
+   "id": "dirt/bass3/83248__zgump__bass-0204.wav",
+   "role": "bass",
+   "duration": 1.0384580498866214,
+   "s": "bass3_83248__zgump__bass_0204",
+   "file": "bass3/83248__zgump__bass-0204.wav"
+  },
+  {
+   "id": "dirt/bass3/83249__zgump__bass-0205.wav",
+   "role": "bass",
+   "duration": 1.0384580498866214,
+   "s": "bass3_83249__zgump__bass_0205",
+   "file": "bass3/83249__zgump__bass-0205.wav"
+  },
+  {
+   "id": "dirt/bass3/83250__zgump__bass-0206.wav",
+   "role": "bass",
+   "duration": 1.5,
+   "s": "bass3_83250__zgump__bass_0206",
+   "file": "bass3/83250__zgump__bass-0206.wav"
+  },
+  {
+   "id": "dirt/bass3/83251__zgump__bass-0207.wav",
+   "role": "bass",
+   "duration": 0.9677324263038549,
+   "s": "bass3_83251__zgump__bass_0207",
+   "file": "bass3/83251__zgump__bass-0207.wav"
+  },
+  {
+   "id": "dirt/bass3/83252__zgump__bass-0208.wav",
+   "role": "bass",
+   "duration": 0.5386621315192743,
+   "s": "bass3_83252__zgump__bass_0208",
+   "file": "bass3/83252__zgump__bass-0208.wav"
+  },
+  {
+   "id": "dirt/bass3/83253__zgump__bass-0209.wav",
+   "role": "bass",
+   "duration": 0.7287301587301588,
+   "s": "bass3_83253__zgump__bass_0209",
+   "file": "bass3/83253__zgump__bass-0209.wav"
+  },
+  {
+   "id": "dirt/bass3/85056__zgump__reverse-bass-01.wav",
+   "role": "bass",
+   "duration": 0.45,
+   "s": "bass3_85056__zgump__reverse_bass_01",
+   "file": "bass3/85056__zgump__reverse-bass-01.wav"
+  },
+  {
+   "id": "dirt/bass3/85057__zgump__reverse-bass-02.wav",
+   "role": "bass",
+   "duration": 0.45,
+   "s": "bass3_85057__zgump__reverse_bass_02",
+   "file": "bass3/85057__zgump__reverse-bass-02.wav"
+  },
+  {
+   "id": "dirt/bassdm/001_BT0A0A7.WAV",
+   "role": "kick",
+   "duration": 0.2838548752834467,
+   "s": "bassdm_001_BT0A0A7",
+   "file": "bassdm/001_BT0A0A7.WAV"
+  },
+  {
+   "id": "dirt/bassdm/002_BT0A0D0.WAV",
+   "role": "kick",
+   "duration": 0.09981859410430839,
+   "s": "bassdm_002_BT0A0D0",
+   "file": "bassdm/002_BT0A0D0.WAV"
+  },
+  {
+   "id": "dirt/bassdm/003_BT0A0D3.WAV",
+   "role": "kick",
+   "duration": 0.16995464852607708,
+   "s": "bassdm_003_BT0A0D3",
+   "file": "bassdm/003_BT0A0D3.WAV"
+  },
+  {
+   "id": "dirt/bassdm/004_BT0A0DA.WAV",
+   "role": "kick",
+   "duration": 0.49709750566893424,
+   "s": "bassdm_004_BT0A0DA",
+   "file": "bassdm/004_BT0A0DA.WAV"
+  },
+  {
+   "id": "dirt/bassdm/005_BT0AAD0.WAV",
+   "role": "kick",
+   "duration": 0.1072562358276644,
+   "s": "bassdm_005_BT0AAD0",
+   "file": "bassdm/005_BT0AAD0.WAV"
+  },
+  {
+   "id": "dirt/bassdm/006_BT0AADA.WAV",
+   "role": "kick",
+   "duration": 0.49859410430839,
+   "s": "bassdm_006_BT0AADA",
+   "file": "bassdm/006_BT0AADA.WAV"
+  },
+  {
+   "id": "dirt/bassdm/007_BT3A0D0.WAV",
+   "role": "kick",
+   "duration": 0.09859410430839002,
+   "s": "bassdm_007_BT3A0D0",
+   "file": "bassdm/007_BT3A0D0.WAV"
+  },
+  {
+   "id": "dirt/bassdm/008_BT3A0D3.WAV",
+   "role": "kick",
+   "duration": 0.1800453514739229,
+   "s": "bassdm_008_BT3A0D3",
+   "file": "bassdm/008_BT3A0D3.WAV"
+  },
+  {
+   "id": "dirt/bassdm/009_BT3A0D7.WAV",
+   "role": "kick",
+   "duration": 0.32369614512471656,
+   "s": "bassdm_009_BT3A0D7",
+   "file": "bassdm/009_BT3A0D7.WAV"
+  },
+  {
+   "id": "dirt/bassdm/010_BT3A0DA.WAV",
+   "role": "kick",
+   "duration": 0.48566893424036284,
+   "s": "bassdm_010_BT3A0DA",
+   "file": "bassdm/010_BT3A0DA.WAV"
+  },
+  {
+   "id": "dirt/bassdm/011_BT3AAD0.WAV",
+   "role": "kick",
+   "duration": 0.09820861678004535,
+   "s": "bassdm_011_BT3AAD0",
+   "file": "bassdm/011_BT3AAD0.WAV"
+  },
+  {
+   "id": "dirt/bassdm/012_BT3AADA.WAV",
+   "role": "kick",
+   "duration": 0.4858956916099773,
+   "s": "bassdm_012_BT3AADA",
+   "file": "bassdm/012_BT3AADA.WAV"
+  },
+  {
+   "id": "dirt/bassdm/013_BT7A0D0.WAV",
+   "role": "kick",
+   "duration": 0.10689342403628117,
+   "s": "bassdm_013_BT7A0D0",
+   "file": "bassdm/013_BT7A0D0.WAV"
+  },
+  {
+   "id": "dirt/bassdm/014_BT7A0D3.WAV",
+   "role": "kick",
+   "duration": 0.1691156462585034,
+   "s": "bassdm_014_BT7A0D3",
+   "file": "bassdm/014_BT7A0D3.WAV"
+  },
+  {
+   "id": "dirt/bassdm/015_BT7A0D7.WAV",
+   "role": "kick",
+   "duration": 0.31179138321995464,
+   "s": "bassdm_015_BT7A0D7",
+   "file": "bassdm/015_BT7A0D7.WAV"
+  },
+  {
+   "id": "dirt/bassdm/016_BT7A0DA.WAV",
+   "role": "kick",
+   "duration": 0.4946031746031746,
+   "s": "bassdm_016_BT7A0DA",
+   "file": "bassdm/016_BT7A0DA.WAV"
+  },
+  {
+   "id": "dirt/bassdm/017_BT7AAD0.WAV",
+   "role": "kick",
+   "duration": 0.10662131519274376,
+   "s": "bassdm_017_BT7AAD0",
+   "file": "bassdm/017_BT7AAD0.WAV"
+  },
+  {
+   "id": "dirt/bassdm/018_BT7AADA.WAV",
+   "role": "kick",
+   "duration": 0.4940136054421769,
+   "s": "bassdm_018_BT7AADA",
+   "file": "bassdm/018_BT7AADA.WAV"
+  },
+  {
+   "id": "dirt/bassdm/019_BTAA0D0.WAV",
+   "role": "kick",
+   "duration": 0.10403628117913832,
+   "s": "bassdm_019_BTAA0D0",
+   "file": "bassdm/019_BTAA0D0.WAV"
+  },
+  {
+   "id": "dirt/bassdm/020_BTAA0D3.WAV",
+   "role": "kick",
+   "duration": 0.184421768707483,
+   "s": "bassdm_020_BTAA0D3",
+   "file": "bassdm/020_BTAA0D3.WAV"
+  },
+  {
+   "id": "dirt/bassdm/021_BTAA0D7.WAV",
+   "role": "kick",
+   "duration": 0.3268707482993197,
+   "s": "bassdm_021_BTAA0D7",
+   "file": "bassdm/021_BTAA0D7.WAV"
+  },
+  {
+   "id": "dirt/bassdm/022_BTAA0DA.WAV",
+   "role": "kick",
+   "duration": 0.48714285714285716,
+   "s": "bassdm_022_BTAA0DA",
+   "file": "bassdm/022_BTAA0DA.WAV"
+  },
+  {
+   "id": "dirt/bassdm/023_BTAAAD0.WAV",
+   "role": "kick",
+   "duration": 0.10399092970521542,
+   "s": "bassdm_023_BTAAAD0",
+   "file": "bassdm/023_BTAAAD0.WAV"
+  },
+  {
+   "id": "dirt/bassdm/024_BTAAADA.WAV",
+   "role": "kick",
+   "duration": 0.48718820861678,
+   "s": "bassdm_024_BTAAADA",
+   "file": "bassdm/024_BTAAADA.WAV"
+  },
+  {
+   "id": "dirt/bassfoo/000_0.wav",
+   "role": "kick",
+   "duration": 0.24997732426303854,
+   "s": "bassfoo_000_0",
+   "file": "bassfoo/000_0.wav"
+  },
+  {
+   "id": "dirt/bassfoo/001_1.wav",
+   "role": "fx",
+   "duration": 0.5,
+   "s": "bassfoo_001_1",
+   "file": "bassfoo/001_1.wav"
+  },
+  {
+   "id": "dirt/bassfoo/002_2.wav",
+   "role": "fx",
+   "duration": 0.5,
+   "s": "bassfoo_002_2",
+   "file": "bassfoo/002_2.wav"
+  },
+  {
+   "id": "dirt/bd/BT0AADA.wav",
+   "role": "kick",
+   "duration": 0.49859410430839,
+   "s": "bd_BT0AADA",
+   "file": "bd/BT0AADA.wav"
+  },
+  {
+   "id": "dirt/bev/00-mono.wav",
+   "role": "texture",
+   "duration": 16.056190476190476,
+   "s": "bev_00_mono",
+   "file": "bev/00-mono.wav"
+  },
+  {
+   "id": "dirt/bev/01-stereo.wav",
+   "role": "texture",
+   "duration": 16.056190476190476,
+   "s": "bev_01_stereo",
+   "file": "bev/01-stereo.wav"
+  },
+  {
+   "id": "dirt/bin/000_bin1.wav",
+   "role": "perc",
+   "duration": 0.8182539682539682,
+   "s": "bin_000_bin1",
+   "file": "bin/000_bin1.wav"
+  },
+  {
+   "id": "dirt/bin/001_0.wav",
+   "role": "perc",
+   "duration": 0.8182539682539682,
+   "s": "bin_001_0",
+   "file": "bin/001_0.wav"
+  },
+  {
+   "id": "dirt/birds/000_1.wav",
+   "role": "field",
+   "duration": 2.0,
+   "s": "birds_000_1",
+   "file": "birds/000_1.wav"
+  },
+  {
+   "id": "dirt/birds/001_10.wav",
+   "role": "field",
+   "duration": 2.0,
+   "s": "birds_001_10",
+   "file": "birds/001_10.wav"
+  },
+  {
+   "id": "dirt/birds/002_2.wav",
+   "role": "field",
+   "duration": 3.0,
+   "s": "birds_002_2",
+   "file": "birds/002_2.wav"
+  },
+  {
+   "id": "dirt/birds/003_3.wav",
+   "role": "field",
+   "duration": 2.5,
+   "s": "birds_003_3",
+   "file": "birds/003_3.wav"
+  },
+  {
+   "id": "dirt/birds/004_4.wav",
+   "role": "field",
+   "duration": 4.0,
+   "s": "birds_004_4",
+   "file": "birds/004_4.wav"
+  },
+  {
+   "id": "dirt/birds/005_5.wav",
+   "role": "field",
+   "duration": 1.0,
+   "s": "birds_005_5",
+   "file": "birds/005_5.wav"
+  },
+  {
+   "id": "dirt/birds/006_6.wav",
+   "role": "field",
+   "duration": 0.8750113378684807,
+   "s": "birds_006_6",
+   "file": "birds/006_6.wav"
+  },
+  {
+   "id": "dirt/birds/007_7.wav",
+   "role": "field",
+   "duration": 1.3750113378684807,
+   "s": "birds_007_7",
+   "file": "birds/007_7.wav"
+  },
+  {
+   "id": "dirt/birds/008_8.wav",
+   "role": "field",
+   "duration": 1.75,
+   "s": "birds_008_8",
+   "file": "birds/008_8.wav"
+  },
+  {
+   "id": "dirt/birds/009_9.wav",
+   "role": "field",
+   "duration": 1.75,
+   "s": "birds_009_9",
+   "file": "birds/009_9.wav"
+  },
+  {
+   "id": "dirt/birds3/000_1.wav",
+   "role": "field",
+   "duration": 0.02140589569160998,
+   "s": "birds3_000_1",
+   "file": "birds3/000_1.wav"
+  },
+  {
+   "id": "dirt/birds3/001_10.wav",
+   "role": "field",
+   "duration": 0.017959183673469388,
+   "s": "birds3_001_10",
+   "file": "birds3/001_10.wav"
+  },
+  {
+   "id": "dirt/birds3/002_11.wav",
+   "role": "field",
+   "duration": 0.025396825396825397,
+   "s": "birds3_002_11",
+   "file": "birds3/002_11.wav"
+  },
+  {
+   "id": "dirt/birds3/003_12.wav",
+   "role": "field",
+   "duration": 0.04462585034013605,
+   "s": "birds3_003_12",
+   "file": "birds3/003_12.wav"
+  },
+  {
+   "id": "dirt/birds3/004_13.wav",
+   "role": "field",
+   "duration": 0.029387755102040815,
+   "s": "birds3_004_13",
+   "file": "birds3/004_13.wav"
+  },
+  {
+   "id": "dirt/birds3/005_14.wav",
+   "role": "field",
+   "duration": 0.058412698412698416,
+   "s": "birds3_005_14",
+   "file": "birds3/005_14.wav"
+  },
+  {
+   "id": "dirt/birds3/006_15.wav",
+   "role": "field",
+   "duration": 0.03736961451247166,
+   "s": "birds3_006_15",
+   "file": "birds3/006_15.wav"
+  },
+  {
+   "id": "dirt/birds3/007_16.wav",
+   "role": "field",
+   "duration": 0.011247165532879818,
+   "s": "birds3_007_16",
+   "file": "birds3/007_16.wav"
+  },
+  {
+   "id": "dirt/birds3/008_17.wav",
+   "role": "field",
+   "duration": 0.017052154195011337,
+   "s": "birds3_008_17",
+   "file": "birds3/008_17.wav"
+  },
+  {
+   "id": "dirt/birds3/009_18.wav",
+   "role": "field",
+   "duration": 0.05043083900226757,
+   "s": "birds3_009_18",
+   "file": "birds3/009_18.wav"
+  },
+  {
+   "id": "dirt/birds3/010_19.wav",
+   "role": "field",
+   "duration": 0.03700680272108844,
+   "s": "birds3_010_19",
+   "file": "birds3/010_19.wav"
+  },
+  {
+   "id": "dirt/birds3/011_2.wav",
+   "role": "field",
+   "duration": 0.017777777777777778,
+   "s": "birds3_011_2",
+   "file": "birds3/011_2.wav"
+  },
+  {
+   "id": "dirt/birds3/012_3.wav",
+   "role": "field",
+   "duration": 0.019138321995464853,
+   "s": "birds3_012_3",
+   "file": "birds3/012_3.wav"
+  },
+  {
+   "id": "dirt/birds3/013_4.wav",
+   "role": "field",
+   "duration": 0.037188208616780044,
+   "s": "birds3_013_4",
+   "file": "birds3/013_4.wav"
+  },
+  {
+   "id": "dirt/birds3/014_5.wav",
+   "role": "field",
+   "duration": 0.0564172335600907,
+   "s": "birds3_014_5",
+   "file": "birds3/014_5.wav"
+  },
+  {
+   "id": "dirt/birds3/015_6.wav",
+   "role": "field",
+   "duration": 0.01070294784580499,
+   "s": "birds3_015_6",
+   "file": "birds3/015_6.wav"
+  },
+  {
+   "id": "dirt/birds3/016_7.wav",
+   "role": "field",
+   "duration": 0.01197278911564626,
+   "s": "birds3_016_7",
+   "file": "birds3/016_7.wav"
+  },
+  {
+   "id": "dirt/birds3/017_8.wav",
+   "role": "field",
+   "duration": 0.027936507936507936,
+   "s": "birds3_017_8",
+   "file": "birds3/017_8.wav"
+  },
+  {
+   "id": "dirt/birds3/018_9.wav",
+   "role": "field",
+   "duration": 0.025759637188208617,
+   "s": "birds3_018_9",
+   "file": "birds3/018_9.wav"
+  },
+  {
+   "id": "dirt/blue/howdoesitfeel.wav",
+   "role": "texture",
+   "duration": 2.3510204081632655,
+   "s": "blue_howdoesitfeel",
+   "file": "blue/howdoesitfeel.wav"
+  },
+  {
+   "id": "dirt/bubble/002_bub2.wav",
+   "role": "kick",
+   "duration": 0.05020408163265306,
+   "s": "bubble_002_bub2",
+   "file": "bubble/002_bub2.wav"
+  },
+  {
+   "id": "dirt/can/000_1.wav",
+   "role": "perc",
+   "duration": 0.1528344671201814,
+   "s": "can_000_1",
+   "file": "can/000_1.wav"
+  },
+  {
+   "id": "dirt/can/001_10.wav",
+   "role": "perc",
+   "duration": 0.10913832199546485,
+   "s": "can_001_10",
+   "file": "can/001_10.wav"
+  },
+  {
+   "id": "dirt/can/003_12.wav",
+   "role": "perc",
+   "duration": 0.3305668934240363,
+   "s": "can_003_12",
+   "file": "can/003_12.wav"
+  },
+  {
+   "id": "dirt/can/004_13.wav",
+   "role": "perc",
+   "duration": 0.498140589569161,
+   "s": "can_004_13",
+   "file": "can/004_13.wav"
+  },
+  {
+   "id": "dirt/can/005_14.wav",
+   "role": "perc",
+   "duration": 0.22519274376417234,
+   "s": "can_005_14",
+   "file": "can/005_14.wav"
+  },
+  {
+   "id": "dirt/can/006_2.wav",
+   "role": "perc",
+   "duration": 0.15798185941043083,
+   "s": "can_006_2",
+   "file": "can/006_2.wav"
+  },
+  {
+   "id": "dirt/can/007_3.wav",
+   "role": "perc",
+   "duration": 0.16081632653061226,
+   "s": "can_007_3",
+   "file": "can/007_3.wav"
+  },
+  {
+   "id": "dirt/can/008_4.wav",
+   "role": "perc",
+   "duration": 0.13684807256235829,
+   "s": "can_008_4",
+   "file": "can/008_4.wav"
+  },
+  {
+   "id": "dirt/can/009_5.wav",
+   "role": "perc",
+   "duration": 0.0545578231292517,
+   "s": "can_009_5",
+   "file": "can/009_5.wav"
+  },
+  {
+   "id": "dirt/can/010_6.wav",
+   "role": "perc",
+   "duration": 0.0908390022675737,
+   "s": "can_010_6",
+   "file": "can/010_6.wav"
+  },
+  {
+   "id": "dirt/can/011_7.wav",
+   "role": "perc",
+   "duration": 0.16426303854875282,
+   "s": "can_011_7",
+   "file": "can/011_7.wav"
+  },
+  {
+   "id": "dirt/can/012_8.wav",
+   "role": "perc",
+   "duration": 0.07512471655328798,
+   "s": "can_012_8",
+   "file": "can/012_8.wav"
+  },
+  {
+   "id": "dirt/can/013_9.wav",
+   "role": "perc",
+   "duration": 0.08512471655328799,
+   "s": "can_013_9",
+   "file": "can/013_9.wav"
+  },
+  {
+   "id": "dirt/casio/high.wav",
+   "role": "perc",
+   "duration": 0.22365079365079366,
+   "s": "casio_high",
+   "file": "casio/high.wav"
+  },
+  {
+   "id": "dirt/casio/low.wav",
+   "role": "perc",
+   "duration": 0.21764172335600906,
+   "s": "casio_low",
+   "file": "casio/low.wav"
+  },
+  {
+   "id": "dirt/click/000_click0.wav",
+   "role": "perc",
+   "duration": 0.10997732426303855,
+   "s": "click_000_click0",
+   "file": "click/000_click0.wav"
+  },
+  {
+   "id": "dirt/click/001_click1.wav",
+   "role": "perc",
+   "duration": 0.20789115646258505,
+   "s": "click_001_click1",
+   "file": "click/001_click1.wav"
+  },
+  {
+   "id": "dirt/click/002_click2.wav",
+   "role": "perc",
+   "duration": 0.4709297052154195,
+   "s": "click_002_click2",
+   "file": "click/002_click2.wav"
+  },
+  {
+   "id": "dirt/control/1.wav",
+   "role": "stab",
+   "duration": 0.22868480725623583,
+   "s": "control_1",
+   "file": "control/1.wav"
+  },
+  {
+   "id": "dirt/control/2.wav",
+   "role": "stab",
+   "duration": 0.4503628117913832,
+   "s": "control_2",
+   "file": "control/2.wav"
+  },
+  {
+   "id": "dirt/d/001_d2.wav",
+   "role": "texture",
+   "duration": 2.1,
+   "s": "d_001_d2",
+   "file": "d/001_d2.wav"
+  },
+  {
+   "id": "dirt/d/002_d3.wav",
+   "role": "texture",
+   "duration": 2.1,
+   "s": "d_002_d3",
+   "file": "d/002_d3.wav"
+  },
+  {
+   "id": "dirt/db/dbs12hit1.wav",
+   "role": "perc",
+   "duration": 0.9013832199546485,
+   "s": "db_dbs12hit1",
+   "file": "db/dbs12hit1.wav"
+  },
+  {
+   "id": "dirt/db/dbs12hit2.wav",
+   "role": "perc",
+   "duration": 0.7599092970521542,
+   "s": "db_dbs12hit2",
+   "file": "db/dbs12hit2.wav"
+  },
+  {
+   "id": "dirt/db/dbs12hit3.wav",
+   "role": "perc",
+   "duration": 0.5100453514739229,
+   "s": "db_dbs12hit3",
+   "file": "db/dbs12hit3.wav"
+  },
+  {
+   "id": "dirt/db/dbs12kick1.wav",
+   "role": "perc",
+   "duration": 0.18750566893424037,
+   "s": "db_dbs12kick1",
+   "file": "db/dbs12kick1.wav"
+  },
+  {
+   "id": "dirt/db/dbs12perc2.wav",
+   "role": "perc",
+   "duration": 2.3974603174603173,
+   "s": "db_dbs12perc2",
+   "file": "db/dbs12perc2.wav"
+  },
+  {
+   "id": "dirt/db/dbs12ride.wav",
+   "role": "hat",
+   "duration": 0.8387528344671202,
+   "s": "db_dbs12ride",
+   "file": "db/dbs12ride.wav"
+  },
+  {
+   "id": "dirt/dist/000_inddistb1.wav",
+   "role": "perc",
+   "duration": 2.396734693877551,
+   "s": "dist_000_inddistb1",
+   "file": "dist/000_inddistb1.wav"
+  },
+  {
+   "id": "dirt/dist/001_inddistb2.wav",
+   "role": "perc",
+   "duration": 2.3974829931972788,
+   "s": "dist_001_inddistb2",
+   "file": "dist/001_inddistb2.wav"
+  },
+  {
+   "id": "dirt/dist/002_inddistb1ride.wav",
+   "role": "perc",
+   "duration": 2.399818594104308,
+   "s": "dist_002_inddistb1ride",
+   "file": "dist/002_inddistb1ride.wav"
+  },
+  {
+   "id": "dirt/dist/003_inddistb2ride.wav",
+   "role": "perc",
+   "duration": 2.397641723356009,
+   "s": "dist_003_inddistb2ride",
+   "file": "dist/003_inddistb2ride.wav"
+  },
+  {
+   "id": "dirt/dist/004_inddistb3.wav",
+   "role": "perc",
+   "duration": 2.4039909297052153,
+   "s": "dist_004_inddistb3",
+   "file": "dist/004_inddistb3.wav"
+  },
+  {
+   "id": "dirt/dist/005_inddistb3ride.wav",
+   "role": "perc",
+   "duration": 2.3980952380952383,
+   "s": "dist_005_inddistb3ride",
+   "file": "dist/005_inddistb3ride.wav"
+  },
+  {
+   "id": "dirt/dist/006_inddistb4.wav",
+   "role": "perc",
+   "duration": 2.406734693877551,
+   "s": "dist_006_inddistb4",
+   "file": "dist/006_inddistb4.wav"
+  },
+  {
+   "id": "dirt/dist/007_inddistb4ride.wav",
+   "role": "perc",
+   "duration": 2.427845804988662,
+   "s": "dist_007_inddistb4ride",
+   "file": "dist/007_inddistb4ride.wav"
+  },
+  {
+   "id": "dirt/dist/008_inddistb5.wav",
+   "role": "perc",
+   "duration": 2.3887755102040815,
+   "s": "dist_008_inddistb5",
+   "file": "dist/008_inddistb5.wav"
+  },
+  {
+   "id": "dirt/dist/009_inddistb5ride.wav",
+   "role": "perc",
+   "duration": 2.4003628117913833,
+   "s": "dist_009_inddistb5ride",
+   "file": "dist/009_inddistb5ride.wav"
+  },
+  {
+   "id": "dirt/dist/010_inddistb6.wav",
+   "role": "perc",
+   "duration": 2.391655328798186,
+   "s": "dist_010_inddistb6",
+   "file": "dist/010_inddistb6.wav"
+  },
+  {
+   "id": "dirt/dist/011_inddistb6ride.wav",
+   "role": "perc",
+   "duration": 2.401995464852608,
+   "s": "dist_011_inddistb6ride",
+   "file": "dist/011_inddistb6ride.wav"
+  },
+  {
+   "id": "dirt/dist/012_inddistb7.wav",
+   "role": "perc",
+   "duration": 2.4068934240362814,
+   "s": "dist_012_inddistb7",
+   "file": "dist/012_inddistb7.wav"
+  },
+  {
+   "id": "dirt/dist/013_inddistb7ride.wav",
+   "role": "perc",
+   "duration": 2.3989115646258505,
+   "s": "dist_013_inddistb7ride",
+   "file": "dist/013_inddistb7ride.wav"
+  },
+  {
+   "id": "dirt/dist/014_inddistb8.wav",
+   "role": "perc",
+   "duration": 2.3989115646258505,
+   "s": "dist_014_inddistb8",
+   "file": "dist/014_inddistb8.wav"
+  },
+  {
+   "id": "dirt/dist/015_inddistb8ride.wav",
+   "role": "perc",
+   "duration": 2.385873015873016,
+   "s": "dist_015_inddistb8ride",
+   "file": "dist/015_inddistb8ride.wav"
+  },
+  {
+   "id": "dirt/east/001_ohkawa_mute.wav",
+   "role": "perc",
+   "duration": 0.37657596371882085,
+   "s": "east_001_ohkawa_mute",
+   "file": "east/001_ohkawa_mute.wav"
+  },
+  {
+   "id": "dirt/east/002_ohkawa_open.wav",
+   "role": "perc",
+   "duration": 0.5700226757369614,
+   "s": "east_002_ohkawa_open",
+   "file": "east/002_ohkawa_open.wav"
+  },
+  {
+   "id": "dirt/east/003_shime_hi.wav",
+   "role": "perc",
+   "duration": 0.7,
+   "s": "east_003_shime_hi",
+   "file": "east/003_shime_hi.wav"
+  },
+  {
+   "id": "dirt/east/004_shime_hi_2.wav",
+   "role": "perc",
+   "duration": 0.7,
+   "s": "east_004_shime_hi_2",
+   "file": "east/004_shime_hi_2.wav"
+  },
+  {
+   "id": "dirt/east/005_shime_mute.wav",
+   "role": "perc",
+   "duration": 0.6,
+   "s": "east_005_shime_mute",
+   "file": "east/005_shime_mute.wav"
+  },
+  {
+   "id": "dirt/east/006_taiko_1.wav",
+   "role": "perc",
+   "duration": 1.3611791383219956,
+   "s": "east_006_taiko_1",
+   "file": "east/006_taiko_1.wav"
+  },
+  {
+   "id": "dirt/east/007_taiko_2.wav",
+   "role": "perc",
+   "duration": 0.3239909297052154,
+   "s": "east_007_taiko_2",
+   "file": "east/007_taiko_2.wav"
+  },
+  {
+   "id": "dirt/east/008_taiko_3.wav",
+   "role": "perc",
+   "duration": 0.5705895691609977,
+   "s": "east_008_taiko_3",
+   "file": "east/008_taiko_3.wav"
+  },
+  {
+   "id": "dirt/electro1/000_et1closedhh.wav",
+   "role": "hat",
+   "duration": 0.3308843537414966,
+   "s": "electro1_000_et1closedhh",
+   "file": "electro1/000_et1closedhh.wav"
+  },
+  {
+   "id": "dirt/electro1/002_et1hit1.wav",
+   "role": "snare",
+   "duration": 0.4005442176870748,
+   "s": "electro1_002_et1hit1",
+   "file": "electro1/002_et1hit1.wav"
+  },
+  {
+   "id": "dirt/electro1/003_et1hit2.wav",
+   "role": "snare",
+   "duration": 0.6472562358276645,
+   "s": "electro1_003_et1hit2",
+   "file": "electro1/003_et1hit2.wav"
+  },
+  {
+   "id": "dirt/electro1/004_et1hit3.wav",
+   "role": "kick",
+   "duration": 0.8910657596371883,
+   "s": "electro1_004_et1hit3",
+   "file": "electro1/004_et1hit3.wav"
+  },
+  {
+   "id": "dirt/electro1/005_et1kick1.wav",
+   "role": "kick",
+   "duration": 0.21623582766439908,
+   "s": "electro1_005_et1kick1",
+   "file": "electro1/005_et1kick1.wav"
+  },
+  {
+   "id": "dirt/electro1/009_et1perc2.wav",
+   "role": "hat",
+   "duration": 0.12589569160997732,
+   "s": "electro1_009_et1perc2",
+   "file": "electro1/009_et1perc2.wav"
+  },
+  {
+   "id": "dirt/electro1/011_et1snare1.wav",
+   "role": "snare",
+   "duration": 0.37587301587301586,
+   "s": "electro1_011_et1snare1",
+   "file": "electro1/011_et1snare1.wav"
+  },
+  {
+   "id": "dirt/electro1/012_et1snare2.wav",
+   "role": "snare",
+   "duration": 0.28226757369614514,
+   "s": "electro1_012_et1snare2",
+   "file": "electro1/012_et1snare2.wav"
+  },
+  {
+   "id": "dirt/f/000_f.wav",
+   "role": "pad",
+   "duration": 0.5728409090909091,
+   "s": "f_000_f",
+   "file": "f/000_f.wav"
+  },
+  {
+   "id": "dirt/feel/BD 04 d.wav",
+   "role": "perc",
+   "duration": 0.19156462585034015,
+   "s": "feel_BD_04_d",
+   "file": "feel/BD 04 d.wav"
+  },
+  {
+   "id": "dirt/feel/Sd 139.wav",
+   "role": "perc",
+   "duration": 0.2436734693877551,
+   "s": "feel_Sd_139",
+   "file": "feel/Sd 139.wav"
+  },
+  {
+   "id": "dirt/feel/Sd 180.wav",
+   "role": "perc",
+   "duration": 0.25108843537414965,
+   "s": "feel_Sd_180",
+   "file": "feel/Sd 180.wav"
+  },
+  {
+   "id": "dirt/feel/Sd 223.wav",
+   "role": "perc",
+   "duration": 0.7030839002267574,
+   "s": "feel_Sd_223",
+   "file": "feel/Sd 223.wav"
+  },
+  {
+   "id": "dirt/feel/sub.wav",
+   "role": "perc",
+   "duration": 1.2631519274376417,
+   "s": "feel_sub",
+   "file": "feel/sub.wav"
+  },
+  {
+   "id": "dirt/fire/fire.wav",
+   "role": "texture",
+   "duration": 9.404081632653062,
+   "s": "fire_fire",
+   "file": "fire/fire.wav"
+  },
+  {
+   "id": "dirt/flick/000_square-p.wav",
+   "role": "perc",
+   "duration": 0.9631746031746031,
+   "s": "flick_000_square_p",
+   "file": "flick/000_square-p.wav"
+  },
+  {
+   "id": "dirt/flick/001_1.wav",
+   "role": "perc",
+   "duration": 0.3671201814058957,
+   "s": "flick_001_1",
+   "file": "flick/001_1.wav"
+  },
+  {
+   "id": "dirt/flick/002_10.wav",
+   "role": "perc",
+   "duration": 0.18802721088435373,
+   "s": "flick_002_10",
+   "file": "flick/002_10.wav"
+  },
+  {
+   "id": "dirt/flick/003_11.wav",
+   "role": "perc",
+   "duration": 0.23024943310657597,
+   "s": "flick_003_11",
+   "file": "flick/003_11.wav"
+  },
+  {
+   "id": "dirt/flick/004_12.wav",
+   "role": "perc",
+   "duration": 0.34095238095238095,
+   "s": "flick_004_12",
+   "file": "flick/004_12.wav"
+  },
+  {
+   "id": "dirt/flick/005_13.wav",
+   "role": "perc",
+   "duration": 0.3203628117913832,
+   "s": "flick_005_13",
+   "file": "flick/005_13.wav"
+  },
+  {
+   "id": "dirt/flick/006_14.wav",
+   "role": "perc",
+   "duration": 0.2090702947845805,
+   "s": "flick_006_14",
+   "file": "flick/006_14.wav"
+  },
+  {
+   "id": "dirt/flick/007_2.wav",
+   "role": "perc",
+   "duration": 0.3039909297052154,
+   "s": "flick_007_2",
+   "file": "flick/007_2.wav"
+  },
+  {
+   "id": "dirt/flick/008_3.wav",
+   "role": "perc",
+   "duration": 0.29532879818594104,
+   "s": "flick_008_3",
+   "file": "flick/008_3.wav"
+  },
+  {
+   "id": "dirt/flick/009_4.wav",
+   "role": "perc",
+   "duration": 0.2802267573696145,
+   "s": "flick_009_4",
+   "file": "flick/009_4.wav"
+  },
+  {
+   "id": "dirt/flick/010_5.wav",
+   "role": "perc",
+   "duration": 0.3880952380952381,
+   "s": "flick_010_5",
+   "file": "flick/010_5.wav"
+  },
+  {
+   "id": "dirt/flick/011_6.wav",
+   "role": "perc",
+   "duration": 0.22439909297052155,
+   "s": "flick_011_6",
+   "file": "flick/011_6.wav"
+  },
+  {
+   "id": "dirt/flick/012_7.wav",
+   "role": "perc",
+   "duration": 0.33868480725623584,
+   "s": "flick_012_7",
+   "file": "flick/012_7.wav"
+  },
+  {
+   "id": "dirt/flick/013_8.wav",
+   "role": "perc",
+   "duration": 0.41705215419501135,
+   "s": "flick_013_8",
+   "file": "flick/013_8.wav"
+  },
+  {
+   "id": "dirt/flick/014_9.wav",
+   "role": "perc",
+   "duration": 0.22820861678004536,
+   "s": "flick_014_9",
+   "file": "flick/014_9.wav"
+  },
+  {
+   "id": "dirt/flick/015_hi.wav",
+   "role": "perc",
+   "duration": 0.37151927437641724,
+   "s": "flick_015_hi",
+   "file": "flick/015_hi.wav"
+  },
+  {
+   "id": "dirt/flick/016_square.wav",
+   "role": "perc",
+   "duration": 0.9022222222222223,
+   "s": "flick_016_square",
+   "file": "flick/016_square.wav"
+  },
+  {
+   "id": "dirt/fm/pad.wav",
+   "role": "texture",
+   "duration": 1.8866213151927438,
+   "s": "fm_pad",
+   "file": "fm/pad.wav"
+  },
+  {
+   "id": "dirt/foo/002_fullbrk.wav",
+   "role": "perc",
+   "duration": 1.857687074829932,
+   "s": "foo_002_fullbrk",
+   "file": "foo/002_fullbrk.wav"
+  },
+  {
+   "id": "dirt/foo/003_drydrmmr.wav",
+   "role": "perc",
+   "duration": 1.7704308390022676,
+   "s": "foo_003_drydrmmr",
+   "file": "foo/003_drydrmmr.wav"
+  },
+  {
+   "id": "dirt/foo/015_sdstckbr.wav",
+   "role": "perc",
+   "duration": 1.871201814058957,
+   "s": "foo_015_sdstckbr",
+   "file": "foo/015_sdstckbr.wav"
+  },
+  {
+   "id": "dirt/foo/016_bllstmp.wav",
+   "role": "perc",
+   "duration": 1.9392290249433106,
+   "s": "foo_016_bllstmp",
+   "file": "foo/016_bllstmp.wav"
+  },
+  {
+   "id": "dirt/foo/020_fststick.wav",
+   "role": "perc",
+   "duration": 1.9414965986394557,
+   "s": "foo_020_fststick",
+   "file": "foo/020_fststick.wav"
+  },
+  {
+   "id": "dirt/foo/023_btstmpbr.wav",
+   "role": "perc",
+   "duration": 1.8848072562358276,
+   "s": "foo_023_btstmpbr",
+   "file": "foo/023_btstmpbr.wav"
+  },
+  {
+   "id": "dirt/foo/026_vintage.wav",
+   "role": "perc",
+   "duration": 1.4141950113378685,
+   "s": "foo_026_vintage",
+   "file": "foo/026_vintage.wav"
+  },
+  {
+   "id": "dirt/future/002_Bd1_w.wav",
+   "role": "perc",
+   "duration": 0.8780498866213152,
+   "s": "future_002_Bd1_w",
+   "file": "future/002_Bd1_w.wav"
+  },
+  {
+   "id": "dirt/future/003_Bd2_w.wav",
+   "role": "perc",
+   "duration": 0.7840589569160997,
+   "s": "future_003_Bd2_w",
+   "file": "future/003_Bd2_w.wav"
+  },
+  {
+   "id": "dirt/future/004_Bd3_w.wav",
+   "role": "perc",
+   "duration": 0.8407256235827665,
+   "s": "future_004_Bd3_w",
+   "file": "future/004_Bd3_w.wav"
+  },
+  {
+   "id": "dirt/future/006_Kick9.wav",
+   "role": "perc",
+   "duration": 0.47165532879818595,
+   "s": "future_006_Kick9",
+   "file": "future/006_Kick9.wav"
+  },
+  {
+   "id": "dirt/future/007_MKD03.wav",
+   "role": "perc",
+   "duration": 0.605532879818594,
+   "s": "future_007_MKD03",
+   "file": "future/007_MKD03.wav"
+  },
+  {
+   "id": "dirt/future/009_MKDRCK05.wav",
+   "role": "perc",
+   "duration": 0.17870748299319728,
+   "s": "future_009_MKDRCK05",
+   "file": "future/009_MKDRCK05.wav"
+  },
+  {
+   "id": "dirt/future/010_MKDRCK06.wav",
+   "role": "perc",
+   "duration": 0.32891156462585036,
+   "s": "future_010_MKDRCK06",
+   "file": "future/010_MKDRCK06.wav"
+  },
+  {
+   "id": "dirt/future/011_MKDRCK07.wav",
+   "role": "perc",
+   "duration": 0.21682539682539684,
+   "s": "future_011_MKDRCK07",
+   "file": "future/011_MKDRCK07.wav"
+  },
+  {
+   "id": "dirt/future/015_lockett_conga_mute2.wav",
+   "role": "perc",
+   "duration": 0.7076643990929705,
+   "s": "future_015_lockett_conga_mute2",
+   "file": "future/015_lockett_conga_mute2.wav"
+  },
+  {
+   "id": "dirt/future/016_lockett_conga_open1.wav",
+   "role": "perc",
+   "duration": 1.0270294784580498,
+   "s": "future_016_lockett_conga_open1",
+   "file": "future/016_lockett_conga_open1.wav"
+  },
+  {
+   "id": "dirt/gab/gab01.wav",
+   "role": "kick",
+   "duration": 1.6,
+   "s": "gab_gab01",
+   "file": "gab/gab01.wav"
+  },
+  {
+   "id": "dirt/gab/gab02.wav",
+   "role": "kick",
+   "duration": 0.4,
+   "s": "gab_gab02",
+   "file": "gab/gab02.wav"
+  },
+  {
+   "id": "dirt/gab/gab03.wav",
+   "role": "kick",
+   "duration": 0.4,
+   "s": "gab_gab03",
+   "file": "gab/gab03.wav"
+  },
+  {
+   "id": "dirt/gab/gab04.wav",
+   "role": "kick",
+   "duration": 0.5271882086167801,
+   "s": "gab_gab04",
+   "file": "gab/gab04.wav"
+  },
+  {
+   "id": "dirt/gab/gab05.wav",
+   "role": "kick",
+   "duration": 0.4,
+   "s": "gab_gab05",
+   "file": "gab/gab05.wav"
+  },
+  {
+   "id": "dirt/gab/gab06.wav",
+   "role": "kick",
+   "duration": 0.8,
+   "s": "gab_gab06",
+   "file": "gab/gab06.wav"
+  },
+  {
+   "id": "dirt/gab/gab07.wav",
+   "role": "kick",
+   "duration": 0.4,
+   "s": "gab_gab07",
+   "file": "gab/gab07.wav"
+  },
+  {
+   "id": "dirt/gab/gab08.wav",
+   "role": "kick",
+   "duration": 0.8,
+   "s": "gab_gab08",
+   "file": "gab/gab08.wav"
+  },
+  {
+   "id": "dirt/gab/gab09.wav",
+   "role": "kick",
+   "duration": 0.4,
+   "s": "gab_gab09",
+   "file": "gab/gab09.wav"
+  },
+  {
+   "id": "dirt/gab/gab10.wav",
+   "role": "kick",
+   "duration": 0.8,
+   "s": "gab_gab10",
+   "file": "gab/gab10.wav"
+  },
+  {
+   "id": "dirt/gabba/000_0.wav",
+   "role": "kick",
+   "duration": 0.24997732426303854,
+   "s": "gabba_000_0",
+   "file": "gabba/000_0.wav"
+  },
+  {
+   "id": "dirt/gabba/001_1.wav",
+   "role": "kick",
+   "duration": 0.26317460317460317,
+   "s": "gabba_001_1",
+   "file": "gabba/001_1.wav"
+  },
+  {
+   "id": "dirt/gabba/002_2.wav",
+   "role": "perc",
+   "duration": 0.13786848072562358,
+   "s": "gabba_002_2",
+   "file": "gabba/002_2.wav"
+  },
+  {
+   "id": "dirt/gabba/003_3.wav",
+   "role": "perc",
+   "duration": 0.1817687074829932,
+   "s": "gabba_003_3",
+   "file": "gabba/003_3.wav"
+  },
+  {
+   "id": "dirt/gabbaloud/000_0.wav",
+   "role": "kick",
+   "duration": 0.24997732426303854,
+   "s": "gabbaloud_000_0",
+   "file": "gabbaloud/000_0.wav"
+  },
+  {
+   "id": "dirt/gabbaloud/001_1.wav",
+   "role": "kick",
+   "duration": 0.26317460317460317,
+   "s": "gabbaloud_001_1",
+   "file": "gabbaloud/001_1.wav"
+  },
+  {
+   "id": "dirt/gabbaloud/002_2.wav",
+   "role": "kick",
+   "duration": 0.13786848072562358,
+   "s": "gabbaloud_002_2",
+   "file": "gabbaloud/002_2.wav"
+  },
+  {
+   "id": "dirt/gabbaloud/003_3.wav",
+   "role": "kick",
+   "duration": 0.1817687074829932,
+   "s": "gabbaloud_003_3",
+   "file": "gabbaloud/003_3.wav"
+  },
+  {
+   "id": "dirt/gabbalouder/000_0.wav",
+   "role": "kick",
+   "duration": 0.24997732426303854,
+   "s": "gabbalouder_000_0",
+   "file": "gabbalouder/000_0.wav"
+  },
+  {
+   "id": "dirt/gabbalouder/001_1.wav",
+   "role": "kick",
+   "duration": 0.26317460317460317,
+   "s": "gabbalouder_001_1",
+   "file": "gabbalouder/001_1.wav"
+  },
+  {
+   "id": "dirt/gabbalouder/002_2.wav",
+   "role": "kick",
+   "duration": 0.13786848072562358,
+   "s": "gabbalouder_002_2",
+   "file": "gabbalouder/002_2.wav"
+  },
+  {
+   "id": "dirt/gabbalouder/003_3.wav",
+   "role": "kick",
+   "duration": 0.1817687074829932,
+   "s": "gabbalouder_003_3",
+   "file": "gabbalouder/003_3.wav"
+  },
+  {
+   "id": "dirt/glitch/000_BD.wav",
+   "role": "fx",
+   "duration": 0.05798185941043084,
+   "s": "glitch_000_BD",
+   "file": "glitch/000_BD.wav"
+  },
+  {
+   "id": "dirt/glitch/006_P2.wav",
+   "role": "fx",
+   "duration": 0.3526530612244898,
+   "s": "glitch_006_P2",
+   "file": "glitch/006_P2.wav"
+  },
+  {
+   "id": "dirt/glitch2/000_BD.wav",
+   "role": "fx",
+   "duration": 0.05798185941043084,
+   "s": "glitch2_000_BD",
+   "file": "glitch2/000_BD.wav"
+  },
+  {
+   "id": "dirt/glitch2/006_P2.wav",
+   "role": "fx",
+   "duration": 0.3526530612244898,
+   "s": "glitch2_006_P2",
+   "file": "glitch2/006_P2.wav"
+  },
+  {
+   "id": "dirt/gretsch/009_flam.wav",
+   "role": "perc",
+   "duration": 0.7701814058956916,
+   "s": "gretsch_009_flam",
+   "file": "gretsch/009_flam.wav"
+  },
+  {
+   "id": "dirt/gtr/0001_cleanC.wav",
+   "role": "pad",
+   "duration": 4.0,
+   "s": "gtr_0001_cleanC",
+   "file": "gtr/0001_cleanC.wav"
+  },
+  {
+   "id": "dirt/gtr/0002_ovrdC.wav",
+   "role": "pad",
+   "duration": 4.0,
+   "s": "gtr_0002_ovrdC",
+   "file": "gtr/0002_ovrdC.wav"
+  },
+  {
+   "id": "dirt/gtr/0003_distC.wav",
+   "role": "pad",
+   "duration": 4.0,
+   "s": "gtr_0003_distC",
+   "file": "gtr/0003_distC.wav"
+  },
+  {
+   "id": "dirt/hh/005_hh3kick1.wav",
+   "role": "kick",
+   "duration": 0.4614965986394558,
+   "s": "hh_005_hh3kick1",
+   "file": "hh/005_hh3kick1.wav"
+  },
+  {
+   "id": "dirt/hit/ufo-take-me-away.wav",
+   "role": "fx",
+   "duration": 2.999659863945578,
+   "s": "hit_ufo_take_me_away",
+   "file": "hit/ufo-take-me-away.wav"
+  },
+  {
+   "id": "dirt/house/003_HH.wav",
+   "role": "perc",
+   "duration": 0.049614512471655325,
+   "s": "house_003_HH",
+   "file": "house/003_HH.wav"
+  },
+  {
+   "id": "dirt/jazz/003_HH.wav",
+   "role": "perc",
+   "duration": 0.049614512471655325,
+   "s": "jazz_003_HH",
+   "file": "jazz/003_HH.wav"
+  },
+  {
+   "id": "dirt/jungbass/000_deeep_n_low.wav",
+   "role": "bass",
+   "duration": 1.401904761904762,
+   "s": "jungbass_000_deeep_n_low",
+   "file": "jungbass/000_deeep_n_low.wav"
+  },
+  {
+   "id": "dirt/jungbass/001_fat_808_sub.wav",
+   "role": "bass",
+   "duration": 1.3322448979591837,
+   "s": "jungbass_001_fat_808_sub",
+   "file": "jungbass/001_fat_808_sub.wav"
+  },
+  {
+   "id": "dirt/jungbass/002_fukubass2.wav",
+   "role": "bass",
+   "duration": 3.0093650793650792,
+   "s": "jungbass_002_fukubass2",
+   "file": "jungbass/002_fukubass2.wav"
+  },
+  {
+   "id": "dirt/jungbass/003_glide_up_down_sub.wav",
+   "role": "bass",
+   "duration": 1.4918820861678004,
+   "s": "jungbass_003_glide_up_down_sub",
+   "file": "jungbass/003_glide_up_down_sub.wav"
+  },
+  {
+   "id": "dirt/jungbass/004_gliding_808_sub.wav",
+   "role": "bass",
+   "duration": 0.5834013605442177,
+   "s": "jungbass_004_gliding_808_sub",
+   "file": "jungbass/004_gliding_808_sub.wav"
+  },
+  {
+   "id": "dirt/jungbass/005_jungasubdown.wav",
+   "role": "bass",
+   "duration": 1.4426984126984126,
+   "s": "jungbass_005_jungasubdown",
+   "file": "jungbass/005_jungasubdown.wav"
+  },
+  {
+   "id": "dirt/jungbass/006_junglerevbass.wav",
+   "role": "bass",
+   "duration": 1.5966439909297052,
+   "s": "jungbass_006_junglerevbass",
+   "file": "jungbass/006_junglerevbass.wav"
+  },
+  {
+   "id": "dirt/jungbass/007_junglesine.wav",
+   "role": "bass",
+   "duration": 1.081859410430839,
+   "s": "jungbass_007_junglesine",
+   "file": "jungbass/007_junglesine.wav"
+  },
+  {
+   "id": "dirt/jungbass/008_junglesine2.wav",
+   "role": "bass",
+   "duration": 2.1354195011337866,
+   "s": "jungbass_008_junglesine2",
+   "file": "jungbass/008_junglesine2.wav"
+  },
+  {
+   "id": "dirt/jungbass/009_junglesine3.wav",
+   "role": "bass",
+   "duration": 2.1354195011337866,
+   "s": "jungbass_009_junglesine3",
+   "file": "jungbass/009_junglesine3.wav"
+  },
+  {
+   "id": "dirt/jungbass/010_mega_jungasubdown.wav",
+   "role": "bass",
+   "duration": 1.4426984126984126,
+   "s": "jungbass_010_mega_jungasubdown",
+   "file": "jungbass/010_mega_jungasubdown.wav"
+  },
+  {
+   "id": "dirt/jungbass/011_shiphorn_tekstep_bass.wav",
+   "role": "bass",
+   "duration": 0.7665759637188209,
+   "s": "jungbass_011_shiphorn_tekstep_bass",
+   "file": "jungbass/011_shiphorn_tekstep_bass.wav"
+  },
+  {
+   "id": "dirt/jungbass/012_short.wav",
+   "role": "bass",
+   "duration": 0.603718820861678,
+   "s": "jungbass_012_short",
+   "file": "jungbass/012_short.wav"
+  },
+  {
+   "id": "dirt/jungbass/013_sub_to_open_wah.wav",
+   "role": "bass",
+   "duration": 3.4,
+   "s": "jungbass_013_sub_to_open_wah",
+   "file": "jungbass/013_sub_to_open_wah.wav"
+  },
+  {
+   "id": "dirt/jungbass/014_sustained_2_octave.wav",
+   "role": "bass",
+   "duration": 3.3523809523809525,
+   "s": "jungbass_014_sustained_2_octave",
+   "file": "jungbass/014_sustained_2_octave.wav"
+  },
+  {
+   "id": "dirt/jungbass/015_sustained_3_octave.wav",
+   "role": "bass",
+   "duration": 2.2320181405895694,
+   "s": "jungbass_015_sustained_3_octave",
+   "file": "jungbass/015_sustained_3_octave.wav"
+  },
+  {
+   "id": "dirt/jungbass/016_sustained_deep_low.wav",
+   "role": "bass",
+   "duration": 1.883718820861678,
+   "s": "jungbass_016_sustained_deep_low",
+   "file": "jungbass/016_sustained_deep_low.wav"
+  },
+  {
+   "id": "dirt/jungbass/017_sweep_me_low_bass.wav",
+   "role": "bass",
+   "duration": 0.7507029478458049,
+   "s": "jungbass_017_sweep_me_low_bass",
+   "file": "jungbass/017_sweep_me_low_bass.wav"
+  },
+  {
+   "id": "dirt/jungbass/018_synthy_round.wav",
+   "role": "bass",
+   "duration": 3.186938775510204,
+   "s": "jungbass_018_synthy_round",
+   "file": "jungbass/018_synthy_round.wav"
+  },
+  {
+   "id": "dirt/jungbass/019_thin_808_sub.wav",
+   "role": "bass",
+   "duration": 3.0476190476190474,
+   "s": "jungbass_019_thin_808_sub",
+   "file": "jungbass/019_thin_808_sub.wav"
+  },
+  {
+   "id": "dirt/jungle/jungle4crash.wav",
+   "role": "hat",
+   "duration": 2.817324263038549,
+   "s": "jungle_jungle4crash",
+   "file": "jungle/jungle4crash.wav"
+  },
+  {
+   "id": "dirt/jungle/jungle4hit3.wav",
+   "role": "hat",
+   "duration": 2.107233560090703,
+   "s": "jungle_jungle4hit3",
+   "file": "jungle/jungle4hit3.wav"
+  },
+  {
+   "id": "dirt/jungle/jungle4openhh.wav",
+   "role": "hat",
+   "duration": 1.2712925170068028,
+   "s": "jungle_jungle4openhh",
+   "file": "jungle/jungle4openhh.wav"
+  },
+  {
+   "id": "dirt/juno/00_juno_raw_low.wav",
+   "role": "stab",
+   "duration": 0.33,
+   "s": "juno_00_juno_raw_low",
+   "file": "juno/00_juno_raw_low.wav"
+  },
+  {
+   "id": "dirt/juno/01_juno_raw_mid.wav",
+   "role": "stab",
+   "duration": 0.34,
+   "s": "juno_01_juno_raw_mid",
+   "file": "juno/01_juno_raw_mid.wav"
+  },
+  {
+   "id": "dirt/juno/02_juno_raw_high.wav",
+   "role": "stab",
+   "duration": 0.32,
+   "s": "juno_02_juno_raw_high",
+   "file": "juno/02_juno_raw_high.wav"
+  },
+  {
+   "id": "dirt/juno/03_juno_chorus_low.wav",
+   "role": "stab",
+   "duration": 0.32,
+   "s": "juno_03_juno_chorus_low",
+   "file": "juno/03_juno_chorus_low.wav"
+  },
+  {
+   "id": "dirt/juno/04_juno_chorus_mid.wav",
+   "role": "stab",
+   "duration": 0.31,
+   "s": "juno_04_juno_chorus_mid",
+   "file": "juno/04_juno_chorus_mid.wav"
+  },
+  {
+   "id": "dirt/juno/05_juno_chorus_high.wav",
+   "role": "stab",
+   "duration": 0.38142857142857145,
+   "s": "juno_05_juno_chorus_high",
+   "file": "juno/05_juno_chorus_high.wav"
+  },
+  {
+   "id": "dirt/juno/06_juno_release_low.wav",
+   "role": "pad",
+   "duration": 1.52,
+   "s": "juno_06_juno_release_low",
+   "file": "juno/06_juno_release_low.wav"
+  },
+  {
+   "id": "dirt/juno/07_juno_release_mid.wav",
+   "role": "pad",
+   "duration": 1.52,
+   "s": "juno_07_juno_release_mid",
+   "file": "juno/07_juno_release_mid.wav"
+  },
+  {
+   "id": "dirt/juno/08_juno_release_high.wav",
+   "role": "pad",
+   "duration": 1.52,
+   "s": "juno_08_juno_release_high",
+   "file": "juno/08_juno_release_high.wav"
+  },
+  {
+   "id": "dirt/juno/09_juno_pad_c_minor_filter.wav",
+   "role": "pad",
+   "duration": 3.369455782312925,
+   "s": "juno_09_juno_pad_c_minor_filter",
+   "file": "juno/09_juno_pad_c_minor_filter.wav"
+  },
+  {
+   "id": "dirt/juno/10_juno_pad_c_minor_no_filter.wav",
+   "role": "pad",
+   "duration": 3.369455782312925,
+   "s": "juno_10_juno_pad_c_minor_no_filter",
+   "file": "juno/10_juno_pad_c_minor_no_filter.wav"
+  },
+  {
+   "id": "dirt/juno/11_juno_pad_c_minor_noise.wav",
+   "role": "pad",
+   "duration": 4.0,
+   "s": "juno_11_juno_pad_c_minor_noise",
+   "file": "juno/11_juno_pad_c_minor_noise.wav"
+  },
+  {
+   "id": "dirt/jvbass/000_01.wav",
+   "role": "bass",
+   "duration": 0.44553287981859413,
+   "s": "jvbass_000_01",
+   "file": "jvbass/000_01.wav"
+  },
+  {
+   "id": "dirt/jvbass/001_02.wav",
+   "role": "bass",
+   "duration": 0.3874829931972789,
+   "s": "jvbass_001_02",
+   "file": "jvbass/001_02.wav"
+  },
+  {
+   "id": "dirt/jvbass/002_03.wav",
+   "role": "bass",
+   "duration": 0.4070748299319728,
+   "s": "jvbass_002_03",
+   "file": "jvbass/002_03.wav"
+  },
+  {
+   "id": "dirt/jvbass/003_04.wav",
+   "role": "bass",
+   "duration": 0.36934240362811793,
+   "s": "jvbass_003_04",
+   "file": "jvbass/003_04.wav"
+  },
+  {
+   "id": "dirt/jvbass/004_05.wav",
+   "role": "bass",
+   "duration": 0.3047619047619048,
+   "s": "jvbass_004_05",
+   "file": "jvbass/004_05.wav"
+  },
+  {
+   "id": "dirt/jvbass/005_06.wav",
+   "role": "bass",
+   "duration": 0.29750566893424035,
+   "s": "jvbass_005_06",
+   "file": "jvbass/005_06.wav"
+  },
+  {
+   "id": "dirt/jvbass/006_07.wav",
+   "role": "bass",
+   "duration": 0.23945578231292516,
+   "s": "jvbass_006_07",
+   "file": "jvbass/006_07.wav"
+  },
+  {
+   "id": "dirt/jvbass/007_08.wav",
+   "role": "bass",
+   "duration": 0.2419954648526077,
+   "s": "jvbass_007_08",
+   "file": "jvbass/007_08.wav"
+  },
+  {
+   "id": "dirt/jvbass/008_09.wav",
+   "role": "bass",
+   "duration": 0.23147392290249433,
+   "s": "jvbass_008_09",
+   "file": "jvbass/008_09.wav"
+  },
+  {
+   "id": "dirt/jvbass/009_10.wav",
+   "role": "bass",
+   "duration": 0.196281179138322,
+   "s": "jvbass_009_10",
+   "file": "jvbass/009_10.wav"
+  },
+  {
+   "id": "dirt/jvbass/010_11.wav",
+   "role": "bass",
+   "duration": 0.17741496598639456,
+   "s": "jvbass_010_11",
+   "file": "jvbass/010_11.wav"
+  },
+  {
+   "id": "dirt/jvbass/011_12.wav",
+   "role": "bass",
+   "duration": 0.21551020408163266,
+   "s": "jvbass_011_12",
+   "file": "jvbass/011_12.wav"
+  },
+  {
+   "id": "dirt/jvbass/012_13.wav",
+   "role": "bass",
+   "duration": 0.1980952380952381,
+   "s": "jvbass_012_13",
+   "file": "jvbass/012_13.wav"
+  },
+  {
+   "id": "dirt/koy/01_left.wav",
+   "role": "texture",
+   "duration": 3.9243764172335602,
+   "s": "koy_01_left",
+   "file": "koy/01_left.wav"
+  },
+  {
+   "id": "dirt/koy/02_right.wav",
+   "role": "texture",
+   "duration": 3.9243764172335602,
+   "s": "koy_02_right",
+   "file": "koy/02_right.wav"
+  },
+  {
+   "id": "dirt/led/000_foo.wav",
+   "role": "perc",
+   "duration": 8.174104308390023,
+   "s": "led_000_foo",
+   "file": "led/000_foo.wav"
+  },
+  {
+   "id": "dirt/moog/000_Mighty Moog C2.wav",
+   "role": "pad",
+   "duration": 5.327891156462585,
+   "s": "moog_000_Mighty_Moog_C2",
+   "file": "moog/000_Mighty Moog C2.wav"
+  },
+  {
+   "id": "dirt/moog/001_Mighty Moog C3.wav",
+   "role": "pad",
+   "duration": 5.3317006802721085,
+   "s": "moog_001_Mighty_Moog_C3",
+   "file": "moog/001_Mighty Moog C3.wav"
+  },
+  {
+   "id": "dirt/moog/002_Mighty Moog C4.wav",
+   "role": "pad",
+   "duration": 5.3336281179138325,
+   "s": "moog_002_Mighty_Moog_C4",
+   "file": "moog/002_Mighty Moog C4.wav"
+  },
+  {
+   "id": "dirt/moog/003_Mighty Moog G1.wav",
+   "role": "pad",
+   "duration": 5.369795918367347,
+   "s": "moog_003_Mighty_Moog_G1",
+   "file": "moog/003_Mighty Moog G1.wav"
+  },
+  {
+   "id": "dirt/moog/004_Mighty Moog G2.wav",
+   "role": "pad",
+   "duration": 5.33124716553288,
+   "s": "moog_004_Mighty_Moog_G2",
+   "file": "moog/004_Mighty Moog G2.wav"
+  },
+  {
+   "id": "dirt/moog/005_Mighty Moog G3.wav",
+   "role": "pad",
+   "duration": 5.333786848072562,
+   "s": "moog_005_Mighty_Moog_G3",
+   "file": "moog/005_Mighty Moog G3.wav"
+  },
+  {
+   "id": "dirt/moog/006_Mighty Moog G4.wav",
+   "role": "pad",
+   "duration": 5.331519274376417,
+   "s": "moog_006_Mighty_Moog_G4",
+   "file": "moog/006_Mighty Moog G4.wav"
+  },
+  {
+   "id": "dirt/newnotes/000_0.wav",
+   "role": "stab",
+   "duration": 0.15272108843537416,
+   "s": "newnotes_000_0",
+   "file": "newnotes/000_0.wav"
+  },
+  {
+   "id": "dirt/newnotes/001_1.wav",
+   "role": "stab",
+   "duration": 0.12043083900226757,
+   "s": "newnotes_001_1",
+   "file": "newnotes/001_1.wav"
+  },
+  {
+   "id": "dirt/newnotes/002_10.wav",
+   "role": "stab",
+   "duration": 0.13587301587301587,
+   "s": "newnotes_002_10",
+   "file": "newnotes/002_10.wav"
+  },
+  {
+   "id": "dirt/newnotes/003_11.wav",
+   "role": "stab",
+   "duration": 0.15047619047619049,
+   "s": "newnotes_003_11",
+   "file": "newnotes/003_11.wav"
+  },
+  {
+   "id": "dirt/newnotes/004_12.wav",
+   "role": "stab",
+   "duration": 0.13997732426303855,
+   "s": "newnotes_004_12",
+   "file": "newnotes/004_12.wav"
+  },
+  {
+   "id": "dirt/newnotes/005_13.wav",
+   "role": "stab",
+   "duration": 0.14582766439909298,
+   "s": "newnotes_005_13",
+   "file": "newnotes/005_13.wav"
+  },
+  {
+   "id": "dirt/newnotes/006_14.wav",
+   "role": "stab",
+   "duration": 0.16106575963718822,
+   "s": "newnotes_006_14",
+   "file": "newnotes/006_14.wav"
+  },
+  {
+   "id": "dirt/newnotes/007_2.wav",
+   "role": "stab",
+   "duration": 0.10882086167800453,
+   "s": "newnotes_007_2",
+   "file": "newnotes/007_2.wav"
+  },
+  {
+   "id": "dirt/newnotes/008_3.wav",
+   "role": "stab",
+   "duration": 0.11,
+   "s": "newnotes_008_3",
+   "file": "newnotes/008_3.wav"
+  },
+  {
+   "id": "dirt/newnotes/009_4.wav",
+   "role": "stab",
+   "duration": 0.13408163265306122,
+   "s": "newnotes_009_4",
+   "file": "newnotes/009_4.wav"
+  },
+  {
+   "id": "dirt/newnotes/010_5.wav",
+   "role": "stab",
+   "duration": 0.1410657596371882,
+   "s": "newnotes_010_5",
+   "file": "newnotes/010_5.wav"
+  },
+  {
+   "id": "dirt/newnotes/011_6.wav",
+   "role": "stab",
+   "duration": 0.13859410430839003,
+   "s": "newnotes_011_6",
+   "file": "newnotes/011_6.wav"
+  },
+  {
+   "id": "dirt/newnotes/012_7.wav",
+   "role": "stab",
+   "duration": 0.13811791383219954,
+   "s": "newnotes_012_7",
+   "file": "newnotes/012_7.wav"
+  },
+  {
+   "id": "dirt/newnotes/013_8.wav",
+   "role": "stab",
+   "duration": 0.15303854875283446,
+   "s": "newnotes_013_8",
+   "file": "newnotes/013_8.wav"
+  },
+  {
+   "id": "dirt/newnotes/014_9.wav",
+   "role": "stab",
+   "duration": 0.15229024943310657,
+   "s": "newnotes_014_9",
+   "file": "newnotes/014_9.wav"
+  },
+  {
+   "id": "dirt/notes/000_0.wav",
+   "role": "stab",
+   "duration": 0.15272108843537416,
+   "s": "notes_000_0",
+   "file": "notes/000_0.wav"
+  },
+  {
+   "id": "dirt/notes/001_1.wav",
+   "role": "stab",
+   "duration": 0.12043083900226757,
+   "s": "notes_001_1",
+   "file": "notes/001_1.wav"
+  },
+  {
+   "id": "dirt/notes/002_10.wav",
+   "role": "stab",
+   "duration": 0.13589569160997733,
+   "s": "notes_002_10",
+   "file": "notes/002_10.wav"
+  },
+  {
+   "id": "dirt/notes/003_11.wav",
+   "role": "stab",
+   "duration": 0.15047619047619049,
+   "s": "notes_003_11",
+   "file": "notes/003_11.wav"
+  },
+  {
+   "id": "dirt/notes/004_12.wav",
+   "role": "stab",
+   "duration": 0.14138321995464853,
+   "s": "notes_004_12",
+   "file": "notes/004_12.wav"
+  },
+  {
+   "id": "dirt/notes/005_13.wav",
+   "role": "stab",
+   "duration": 0.14582766439909298,
+   "s": "notes_005_13",
+   "file": "notes/005_13.wav"
+  },
+  {
+   "id": "dirt/notes/006_14.wav",
+   "role": "stab",
+   "duration": 0.16106575963718822,
+   "s": "notes_006_14",
+   "file": "notes/006_14.wav"
+  },
+  {
+   "id": "dirt/notes/007_2.wav",
+   "role": "stab",
+   "duration": 0.10882086167800453,
+   "s": "notes_007_2",
+   "file": "notes/007_2.wav"
+  },
+  {
+   "id": "dirt/notes/008_3.wav",
+   "role": "stab",
+   "duration": 0.10918367346938776,
+   "s": "notes_008_3",
+   "file": "notes/008_3.wav"
+  },
+  {
+   "id": "dirt/notes/009_4.wav",
+   "role": "stab",
+   "duration": 0.13408163265306122,
+   "s": "notes_009_4",
+   "file": "notes/009_4.wav"
+  },
+  {
+   "id": "dirt/notes/010_5.wav",
+   "role": "stab",
+   "duration": 0.1410657596371882,
+   "s": "notes_010_5",
+   "file": "notes/010_5.wav"
+  },
+  {
+   "id": "dirt/notes/011_6.wav",
+   "role": "stab",
+   "duration": 0.13859410430839003,
+   "s": "notes_011_6",
+   "file": "notes/011_6.wav"
+  },
+  {
+   "id": "dirt/notes/012_7.wav",
+   "role": "stab",
+   "duration": 0.13811791383219954,
+   "s": "notes_012_7",
+   "file": "notes/012_7.wav"
+  },
+  {
+   "id": "dirt/notes/013_8.wav",
+   "role": "stab",
+   "duration": 0.15303854875283446,
+   "s": "notes_013_8",
+   "file": "notes/013_8.wav"
+  },
+  {
+   "id": "dirt/notes/014_9.wav",
+   "role": "stab",
+   "duration": 0.15229024943310657,
+   "s": "notes_014_9",
+   "file": "notes/014_9.wav"
+  },
+  {
+   "id": "dirt/pad/alien-monolith-pad.wav",
+   "role": "texture",
+   "duration": 12.0,
+   "s": "pad_alien_monolith_pad",
+   "file": "pad/alien-monolith-pad.wav"
+  },
+  {
+   "id": "dirt/pad/angelpads.wav",
+   "role": "texture",
+   "duration": 4.999705215419501,
+   "s": "pad_angelpads",
+   "file": "pad/angelpads.wav"
+  },
+  {
+   "id": "dirt/pad/bellpad-harmonics.wav",
+   "role": "texture",
+   "duration": 3.2,
+   "s": "pad_bellpad_harmonics",
+   "file": "pad/bellpad-harmonics.wav"
+  },
+  {
+   "id": "dirt/padlong/atmospheric-abduction.wav",
+   "role": "texture",
+   "duration": 25.917868480725623,
+   "s": "padlong_atmospheric_abduction",
+   "file": "padlong/atmospheric-abduction.wav"
+  },
+  {
+   "id": "dirt/pebbles/90788__kmoon__pebbles-scrape-drag-foot.wav",
+   "role": "texture",
+   "duration": 22.401541666666667,
+   "s": "pebbles_90788__kmoon__pebbles_scrape_drag_foot",
+   "file": "pebbles/90788__kmoon__pebbles-scrape-drag-foot.wav"
+  },
+  {
+   "id": "dirt/peri/003_hhx.wav",
+   "role": "hat",
+   "duration": 0.42857142857142855,
+   "s": "peri_003_hhx",
+   "file": "peri/003_hhx.wav"
+  },
+  {
+   "id": "dirt/pluck/BS A#2 PI.wav",
+   "role": "stab",
+   "duration": 1.6468027210884353,
+   "s": "pluck_BS_A_2_PI",
+   "file": "pluck/BS A#2 PI.wav"
+  },
+  {
+   "id": "dirt/pluck/BS A1 PI.wav",
+   "role": "pad",
+   "duration": 1.878639455782313,
+   "s": "pluck_BS_A1_PI",
+   "file": "pluck/BS A1 PI.wav"
+  },
+  {
+   "id": "dirt/pluck/BS A3 PI.wav",
+   "role": "pad",
+   "duration": 1.607981859410431,
+   "s": "pluck_BS_A3_PI",
+   "file": "pluck/BS A3 PI.wav"
+  },
+  {
+   "id": "dirt/pluck/BS B1 PI.wav",
+   "role": "pad",
+   "duration": 1.7307482993197278,
+   "s": "pluck_BS_B1_PI",
+   "file": "pluck/BS B1 PI.wav"
+  },
+  {
+   "id": "dirt/pluck/BS B3 PI.wav",
+   "role": "stab",
+   "duration": 0.9225396825396825,
+   "s": "pluck_BS_B3_PI",
+   "file": "pluck/BS B3 PI.wav"
+  },
+  {
+   "id": "dirt/pluck/BS C3 PI.wav",
+   "role": "pad",
+   "duration": 1.7477097505668935,
+   "s": "pluck_BS_C3_PI",
+   "file": "pluck/BS C3 PI.wav"
+  },
+  {
+   "id": "dirt/pluck/BS D#3 PI.wav",
+   "role": "pad",
+   "duration": 1.0913378684807256,
+   "s": "pluck_BS_D_3_PI",
+   "file": "pluck/BS D#3 PI.wav"
+  },
+  {
+   "id": "dirt/pluck/BS D2 PI.wav",
+   "role": "pad",
+   "duration": 1.8750113378684807,
+   "s": "pluck_BS_D2_PI",
+   "file": "pluck/BS D2 PI.wav"
+  },
+  {
+   "id": "dirt/pluck/BS D4 PI.wav",
+   "role": "stab",
+   "duration": 0.8344671201814059,
+   "s": "pluck_BS_D4_PI",
+   "file": "pluck/BS D4 PI.wav"
+  },
+  {
+   "id": "dirt/pluck/BS E1 PI.wav",
+   "role": "pad",
+   "duration": 2.1340589569160997,
+   "s": "pluck_BS_E1_PI",
+   "file": "pluck/BS E1 PI.wav"
+  },
+  {
+   "id": "dirt/pluck/BS E2 PI.wav",
+   "role": "pad",
+   "duration": 1.8829931972789116,
+   "s": "pluck_BS_E2_PI",
+   "file": "pluck/BS E2 PI.wav"
+  },
+  {
+   "id": "dirt/pluck/BS F1 PI.wav",
+   "role": "pad",
+   "duration": 2.1675283446712017,
+   "s": "pluck_BS_F1_PI",
+   "file": "pluck/BS F1 PI.wav"
+  },
+  {
+   "id": "dirt/pluck/BS F3 PI.wav",
+   "role": "stab",
+   "duration": 1.269297052154195,
+   "s": "pluck_BS_F3_PI",
+   "file": "pluck/BS F3 PI.wav"
+  },
+  {
+   "id": "dirt/pluck/BS G#2 PI.wav",
+   "role": "pad",
+   "duration": 1.3326077097505669,
+   "s": "pluck_BS_G_2_PI",
+   "file": "pluck/BS G#2 PI.wav"
+  },
+  {
+   "id": "dirt/pluck/BS G1 PI.wav",
+   "role": "pad",
+   "duration": 1.9011337868480727,
+   "s": "pluck_BS_G1_PI",
+   "file": "pluck/BS G1 PI.wav"
+  },
+  {
+   "id": "dirt/pluck/BS G2 PI.wav",
+   "role": "pad",
+   "duration": 1.5185487528344672,
+   "s": "pluck_BS_G2_PI",
+   "file": "pluck/BS G2 PI.wav"
+  },
+  {
+   "id": "dirt/pluck/BS G3 PI.wav",
+   "role": "pad",
+   "duration": 1.4251247165532879,
+   "s": "pluck_BS_G3_PI",
+   "file": "pluck/BS G3 PI.wav"
+  },
+  {
+   "id": "dirt/sax/000_notes121a.wav",
+   "role": "pad",
+   "duration": 4.44734693877551,
+   "s": "sax_000_notes121a",
+   "file": "sax/000_notes121a.wav"
+  },
+  {
+   "id": "dirt/sax/001_notes121a2.wav",
+   "role": "pad",
+   "duration": 4.504671201814059,
+   "s": "sax_001_notes121a2",
+   "file": "sax/001_notes121a2.wav"
+  },
+  {
+   "id": "dirt/sax/002_notes121b.wav",
+   "role": "pad",
+   "duration": 4.125895691609977,
+   "s": "sax_002_notes121b",
+   "file": "sax/002_notes121b.wav"
+  },
+  {
+   "id": "dirt/sax/003_notes121bflat.wav",
+   "role": "pad",
+   "duration": 4.3120408163265305,
+   "s": "sax_003_notes121bflat",
+   "file": "sax/003_notes121bflat.wav"
+  },
+  {
+   "id": "dirt/sax/004_notes121bflat2.wav",
+   "role": "pad",
+   "duration": 4.5859410430839,
+   "s": "sax_004_notes121bflat2",
+   "file": "sax/004_notes121bflat2.wav"
+  },
+  {
+   "id": "dirt/sax/005_notes121c.wav",
+   "role": "pad",
+   "duration": 4.426303854875283,
+   "s": "sax_005_notes121c",
+   "file": "sax/005_notes121c.wav"
+  },
+  {
+   "id": "dirt/sax/006_notes121c2.wav",
+   "role": "pad",
+   "duration": 4.202086167800453,
+   "s": "sax_006_notes121c2",
+   "file": "sax/006_notes121c2.wav"
+  },
+  {
+   "id": "dirt/sax/007_notes121csharp.wav",
+   "role": "pad",
+   "duration": 4.067641723356009,
+   "s": "sax_007_notes121csharp",
+   "file": "sax/007_notes121csharp.wav"
+  },
+  {
+   "id": "dirt/sax/008_notes121csharp2.wav",
+   "role": "pad",
+   "duration": 4.0515192743764175,
+   "s": "sax_008_notes121csharp2",
+   "file": "sax/008_notes121csharp2.wav"
+  },
+  {
+   "id": "dirt/sax/009_notes121d.wav",
+   "role": "pad",
+   "duration": 4.260861678004535,
+   "s": "sax_009_notes121d",
+   "file": "sax/009_notes121d.wav"
+  },
+  {
+   "id": "dirt/sax/010_notes121e.wav",
+   "role": "pad",
+   "duration": 4.0751020408163265,
+   "s": "sax_010_notes121e",
+   "file": "sax/010_notes121e.wav"
+  },
+  {
+   "id": "dirt/sax/011_notes121e2.wav",
+   "role": "pad",
+   "duration": 4.156371882086168,
+   "s": "sax_011_notes121e2",
+   "file": "sax/011_notes121e2.wav"
+  },
+  {
+   "id": "dirt/sax/012_notes121eflat.wav",
+   "role": "pad",
+   "duration": 4.043174603174603,
+   "s": "sax_012_notes121eflat",
+   "file": "sax/012_notes121eflat.wav"
+  },
+  {
+   "id": "dirt/sax/013_notes121eflat2.wav",
+   "role": "pad",
+   "duration": 4.877641723356009,
+   "s": "sax_013_notes121eflat2",
+   "file": "sax/013_notes121eflat2.wav"
+  },
+  {
+   "id": "dirt/sax/014_notes121f.wav",
+   "role": "pad",
+   "duration": 4.138412698412698,
+   "s": "sax_014_notes121f",
+   "file": "sax/014_notes121f.wav"
+  },
+  {
+   "id": "dirt/sax/015_notes121f2.wav",
+   "role": "pad",
+   "duration": 4.295691609977324,
+   "s": "sax_015_notes121f2",
+   "file": "sax/015_notes121f2.wav"
+  },
+  {
+   "id": "dirt/sax/016_notes121fsharp.wav",
+   "role": "pad",
+   "duration": 4.173061224489796,
+   "s": "sax_016_notes121fsharp",
+   "file": "sax/016_notes121fsharp.wav"
+  },
+  {
+   "id": "dirt/sax/017_notes121fsharp2.wav",
+   "role": "pad",
+   "duration": 4.307278911564626,
+   "s": "sax_017_notes121fsharp2",
+   "file": "sax/017_notes121fsharp2.wav"
+  },
+  {
+   "id": "dirt/sax/018_notes121g.wav",
+   "role": "pad",
+   "duration": 4.2122448979591836,
+   "s": "sax_018_notes121g",
+   "file": "sax/018_notes121g.wav"
+  },
+  {
+   "id": "dirt/sax/019_notes121g2.wav",
+   "role": "pad",
+   "duration": 4.20281179138322,
+   "s": "sax_019_notes121g2",
+   "file": "sax/019_notes121g2.wav"
+  },
+  {
+   "id": "dirt/sax/020_notes121gsharp.wav",
+   "role": "pad",
+   "duration": 4.41233560090703,
+   "s": "sax_020_notes121gsharp",
+   "file": "sax/020_notes121gsharp.wav"
+  },
+  {
+   "id": "dirt/sax/021_notes121gsharp2.wav",
+   "role": "pad",
+   "duration": 4.260861678004535,
+   "s": "sax_021_notes121gsharp2",
+   "file": "sax/021_notes121gsharp2.wav"
+  },
+  {
+   "id": "dirt/sitar/000_d_maj_sitar_chorda.wav",
+   "role": "pad",
+   "duration": 7.874875283446712,
+   "s": "sitar_000_d_maj_sitar_chorda",
+   "file": "sitar/000_d_maj_sitar_chorda.wav"
+  },
+  {
+   "id": "dirt/sitar/001_d_maj_sitar_chordb.wav",
+   "role": "pad",
+   "duration": 3.9599773242630385,
+   "s": "sitar_001_d_maj_sitar_chordb",
+   "file": "sitar/001_d_maj_sitar_chordb.wav"
+  },
+  {
+   "id": "dirt/sitar/002_d_maj_sitar_chordc.wav",
+   "role": "pad",
+   "duration": 7.077619047619048,
+   "s": "sitar_002_d_maj_sitar_chordc",
+   "file": "sitar/002_d_maj_sitar_chordc.wav"
+  },
+  {
+   "id": "dirt/sitar/003_d_maj_sitar_chordd.wav",
+   "role": "pad",
+   "duration": 6.524149659863945,
+   "s": "sitar_003_d_maj_sitar_chordd",
+   "file": "sitar/003_d_maj_sitar_chordd.wav"
+  },
+  {
+   "id": "dirt/sitar/004_d_maj_sitar_chorde.wav",
+   "role": "pad",
+   "duration": 6.093718820861678,
+   "s": "sitar_004_d_maj_sitar_chorde",
+   "file": "sitar/004_d_maj_sitar_chorde.wav"
+  },
+  {
+   "id": "dirt/sitar/005_d_minor_sitar_chorda.wav",
+   "role": "pad",
+   "duration": 7.645215419501134,
+   "s": "sitar_005_d_minor_sitar_chorda",
+   "file": "sitar/005_d_minor_sitar_chorda.wav"
+  },
+  {
+   "id": "dirt/sitar/006_d_minor_sitar_chordb.wav",
+   "role": "pad",
+   "duration": 5.969569160997732,
+   "s": "sitar_006_d_minor_sitar_chordb",
+   "file": "sitar/006_d_minor_sitar_chordb.wav"
+  },
+  {
+   "id": "dirt/sitar/007_d_minor_sitar_chordc.wav",
+   "role": "pad",
+   "duration": 8.819501133786847,
+   "s": "sitar_007_d_minor_sitar_chordc",
+   "file": "sitar/007_d_minor_sitar_chordc.wav"
+  },
+  {
+   "id": "dirt/stab/000_stab1.wav",
+   "role": "pad",
+   "duration": 0.8199773242630386,
+   "s": "stab_000_stab1",
+   "file": "stab/000_stab1.wav"
+  },
+  {
+   "id": "dirt/stab/001_stab10.wav",
+   "role": "stab",
+   "duration": 0.5121315192743764,
+   "s": "stab_001_stab10",
+   "file": "stab/001_stab10.wav"
+  },
+  {
+   "id": "dirt/stab/002_stab11.wav",
+   "role": "stab",
+   "duration": 0.5121315192743764,
+   "s": "stab_002_stab11",
+   "file": "stab/002_stab11.wav"
+  },
+  {
+   "id": "dirt/stab/003_stab12.wav",
+   "role": "stab",
+   "duration": 0.5267120181405895,
+   "s": "stab_003_stab12",
+   "file": "stab/003_stab12.wav"
+  },
+  {
+   "id": "dirt/stab/004_stab13.wav",
+   "role": "stab",
+   "duration": 0.5370294784580499,
+   "s": "stab_004_stab13",
+   "file": "stab/004_stab13.wav"
+  },
+  {
+   "id": "dirt/stab/005_stab14.wav",
+   "role": "stab",
+   "duration": 0.5295918367346939,
+   "s": "stab_005_stab14",
+   "file": "stab/005_stab14.wav"
+  },
+  {
+   "id": "dirt/stab/006_stab15.wav",
+   "role": "stab",
+   "duration": 0.5492743764172335,
+   "s": "stab_006_stab15",
+   "file": "stab/006_stab15.wav"
+  },
+  {
+   "id": "dirt/stab/007_stab16.wav",
+   "role": "stab",
+   "duration": 0.5697052154195011,
+   "s": "stab_007_stab16",
+   "file": "stab/007_stab16.wav"
+  },
+  {
+   "id": "dirt/stab/008_stab17.wav",
+   "role": "stab",
+   "duration": 0.5697052154195011,
+   "s": "stab_008_stab17",
+   "file": "stab/008_stab17.wav"
+  },
+  {
+   "id": "dirt/stab/009_stab18.wav",
+   "role": "stab",
+   "duration": 0.6522675736961451,
+   "s": "stab_009_stab18",
+   "file": "stab/009_stab18.wav"
+  },
+  {
+   "id": "dirt/stab/010_stab19.wav",
+   "role": "stab",
+   "duration": 0.6457823129251701,
+   "s": "stab_010_stab19",
+   "file": "stab/010_stab19.wav"
+  },
+  {
+   "id": "dirt/stab/011_stab2.wav",
+   "role": "pad",
+   "duration": 0.8846258503401361,
+   "s": "stab_011_stab2",
+   "file": "stab/011_stab2.wav"
+  },
+  {
+   "id": "dirt/stab/012_stab20.wav",
+   "role": "stab",
+   "duration": 0.8344671201814059,
+   "s": "stab_012_stab20",
+   "file": "stab/012_stab20.wav"
+  },
+  {
+   "id": "dirt/stab/013_stab21.wav",
+   "role": "stab",
+   "duration": 0.6492517006802722,
+   "s": "stab_013_stab21",
+   "file": "stab/013_stab21.wav"
+  },
+  {
+   "id": "dirt/stab/014_stab22.wav",
+   "role": "stab",
+   "duration": 0.5203174603174603,
+   "s": "stab_014_stab22",
+   "file": "stab/014_stab22.wav"
+  },
+  {
+   "id": "dirt/stab/015_stab23.wav",
+   "role": "stab",
+   "duration": 0.5035600907029478,
+   "s": "stab_015_stab23",
+   "file": "stab/015_stab23.wav"
+  },
+  {
+   "id": "dirt/stab/016_stab3.wav",
+   "role": "pad",
+   "duration": 0.9260544217687074,
+   "s": "stab_016_stab3",
+   "file": "stab/016_stab3.wav"
+  },
+  {
+   "id": "dirt/stab/017_stab4.wav",
+   "role": "pad",
+   "duration": 0.9821315192743764,
+   "s": "stab_017_stab4",
+   "file": "stab/017_stab4.wav"
+  },
+  {
+   "id": "dirt/stab/018_stab5.wav",
+   "role": "pad",
+   "duration": 0.7753061224489796,
+   "s": "stab_018_stab5",
+   "file": "stab/018_stab5.wav"
+  },
+  {
+   "id": "dirt/stab/019_stab6.wav",
+   "role": "pad",
+   "duration": 0.8897278911564626,
+   "s": "stab_019_stab6",
+   "file": "stab/019_stab6.wav"
+  },
+  {
+   "id": "dirt/stab/020_stab7.wav",
+   "role": "pad",
+   "duration": 0.745578231292517,
+   "s": "stab_020_stab7",
+   "file": "stab/020_stab7.wav"
+  },
+  {
+   "id": "dirt/stab/021_stab8.wav",
+   "role": "pad",
+   "duration": 0.7448299319727891,
+   "s": "stab_021_stab8",
+   "file": "stab/021_stab8.wav"
+  },
+  {
+   "id": "dirt/stab/022_stab9.wav",
+   "role": "stab",
+   "duration": 0.6340136054421769,
+   "s": "stab_022_stab9",
+   "file": "stab/022_stab9.wav"
+  },
+  {
+   "id": "dirt/stomp/003_2.wav",
+   "role": "texture",
+   "duration": 0.2,
+   "s": "stomp_003_2",
+   "file": "stomp/003_2.wav"
+  },
+  {
+   "id": "dirt/stomp/004_3.wav",
+   "role": "texture",
+   "duration": 0.2015873015873016,
+   "s": "stomp_004_3",
+   "file": "stomp/004_3.wav"
+  },
+  {
+   "id": "dirt/stomp/009_9.wav",
+   "role": "kick",
+   "duration": 0.0182312925170068,
+   "s": "stomp_009_9",
+   "file": "stomp/009_9.wav"
+  },
+  {
+   "id": "dirt/tech/tn1hit1.wav",
+   "role": "perc",
+   "duration": 0.32,
+   "s": "tech_tn1hit1",
+   "file": "tech/tn1hit1.wav"
+  },
+  {
+   "id": "dirt/tech/tn1hit3.wav",
+   "role": "perc",
+   "duration": 0.10614512471655328,
+   "s": "tech_tn1hit3",
+   "file": "tech/tn1hit3.wav"
+  },
+  {
+   "id": "dirt/tech/tn1perc1.wav",
+   "role": "perc",
+   "duration": 0.33886621315192744,
+   "s": "tech_tn1perc1",
+   "file": "tech/tn1perc1.wav"
+  },
+  {
+   "id": "dirt/tech/tn1perc2.wav",
+   "role": "perc",
+   "duration": 0.7125623582766439,
+   "s": "tech_tn1perc2",
+   "file": "tech/tn1perc2.wav"
+  },
+  {
+   "id": "dirt/tech/tn1snare1.wav",
+   "role": "snare",
+   "duration": 0.7827437641723356,
+   "s": "tech_tn1snare1",
+   "file": "tech/tn1snare1.wav"
+  },
+  {
+   "id": "dirt/tech/tn1snare2.wav",
+   "role": "snare",
+   "duration": 0.06102040816326531,
+   "s": "tech_tn1snare2",
+   "file": "tech/tn1snare2.wav"
+  },
+  {
+   "id": "dirt/techno/001_1.wav",
+   "role": "kick",
+   "duration": 0.4179591836734694,
+   "s": "techno_001_1",
+   "file": "techno/001_1.wav"
+  },
+  {
+   "id": "dirt/techno/002_3.wav",
+   "role": "perc",
+   "duration": 0.1817687074829932,
+   "s": "techno_002_3",
+   "file": "techno/002_3.wav"
+  },
+  {
+   "id": "dirt/techno/003_4.wav",
+   "role": "perc",
+   "duration": 0.12970521541950114,
+   "s": "techno_003_4",
+   "file": "techno/003_4.wav"
+  },
+  {
+   "id": "dirt/techno/004_5.wav",
+   "role": "perc",
+   "duration": 0.3305668934240363,
+   "s": "techno_004_5",
+   "file": "techno/004_5.wav"
+  },
+  {
+   "id": "dirt/voodoo/000_VoodooBass.wav",
+   "role": "kick",
+   "duration": 0.15233560090702947,
+   "s": "voodoo_000_VoodooBass",
+   "file": "voodoo/000_VoodooBass.wav"
+  },
+  {
+   "id": "dirt/voodoo/003_VoodooSnare.wav",
+   "role": "snare",
+   "duration": 0.1253514739229025,
+   "s": "voodoo_003_VoodooSnare",
+   "file": "voodoo/003_VoodooSnare.wav"
+  },
+  {
+   "id": "dirt/voodoo/004_VoodooTom.wav",
+   "role": "perc",
+   "duration": 0.12770975056689343,
+   "s": "voodoo_004_VoodooTom",
+   "file": "voodoo/004_VoodooTom.wav"
+  },
+  {
+   "id": "dirt/wind/000_wind1.wav",
+   "role": "field",
+   "duration": 0.8602947845804989,
+   "s": "wind_000_wind1",
+   "file": "wind/000_wind1.wav"
+  },
+  {
+   "id": "dirt/wind/001_wind10.wav",
+   "role": "field",
+   "duration": 1.191451247165533,
+   "s": "wind_001_wind10",
+   "file": "wind/001_wind10.wav"
+  },
+  {
+   "id": "dirt/wind/002_wind2.wav",
+   "role": "field",
+   "duration": 1.1447845804988661,
+   "s": "wind_002_wind2",
+   "file": "wind/002_wind2.wav"
+  },
+  {
+   "id": "dirt/wind/003_wind3.wav",
+   "role": "field",
+   "duration": 0.9827210884353742,
+   "s": "wind_003_wind3",
+   "file": "wind/003_wind3.wav"
+  },
+  {
+   "id": "dirt/wind/004_wind4.wav",
+   "role": "field",
+   "duration": 1.1331292517006804,
+   "s": "wind_004_wind4",
+   "file": "wind/004_wind4.wav"
+  },
+  {
+   "id": "dirt/wind/005_wind5.wav",
+   "role": "field",
+   "duration": 1.1173015873015872,
+   "s": "wind_005_wind5",
+   "file": "wind/005_wind5.wav"
+  },
+  {
+   "id": "dirt/wind/006_wind6.wav",
+   "role": "field",
+   "duration": 1.0114965986394557,
+   "s": "wind_006_wind6",
+   "file": "wind/006_wind6.wav"
+  },
+  {
+   "id": "dirt/wind/007_wind7.wav",
+   "role": "field",
+   "duration": 1.1110430839002268,
+   "s": "wind_007_wind7",
+   "file": "wind/007_wind7.wav"
+  },
+  {
+   "id": "dirt/wind/008_wind8.wav",
+   "role": "field",
+   "duration": 1.0853514739229024,
+   "s": "wind_008_wind8",
+   "file": "wind/008_wind8.wav"
+  },
+  {
+   "id": "dirt/wind/009_wind9.wav",
+   "role": "field",
+   "duration": 1.0584807256235829,
+   "s": "wind_009_wind9",
+   "file": "wind/009_wind9.wav"
+  },
+  {
+   "id": "dirt/world/gabbakick.wav",
+   "role": "kick",
+   "duration": 0.24997732426303854,
+   "s": "world_gabbakick",
+   "file": "world/gabbakick.wav"
+  },
+  {
+   "id": "dirt/world/sn.wav",
+   "role": "kick",
+   "duration": 0.15201469354436406,
+   "s": "world_sn",
+   "file": "world/sn.wav"
+  }
+ ],
+ "synths": [
+  {
+   "id": "synth/sawtooth",
+   "role": "bass"
+  }
+ ],
+ "missing": []
+}

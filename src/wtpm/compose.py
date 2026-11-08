@@ -12,7 +12,6 @@ from .samplebank import SampleRef
 SCORE_SCHEMA = "wtpm-compose/1"
 DEFAULT_PRESET = Path(__file__).parent / "presets" / "default.json"
 LAYERS = ("puls", "bass", "motiv", "boegen", "leitwort")
-SHARED_LAYER = "puls"
 MIN_SCHEMA = (1, 1)
 LINE_AWARE_TYPES = ("pos_ngram", "dependency")
 
@@ -24,20 +23,12 @@ class ComposeError(ValueError):
 @dataclass(frozen=True)
 class Pick:
     layer: str
-    name: str
     sample: SampleRef
     long: bool
-    index: int = 0
-
-    @property
-    def superdirt(self) -> bool:
-        return self.sample.dirt_name is not None and self.layer != SHARED_LAYER
 
     @property
     def s(self) -> str:
-        if self.sample.synth:
-            return self.sample.id.removeprefix("synth/")
-        return self.sample.dirt_name if self.superdirt else f"{self.name}:{self.index}"
+        return self.sample.id.removeprefix("synth/") if self.sample.synth else self.sample.s
 
 
 @dataclass(frozen=True)
@@ -276,16 +267,12 @@ def compose(
         "layers": layers,
         "samples": [
             {
-                "name": pick.name,
                 "s": pick.s,
-                "index": pick.index,
                 "layer": pick.layer,
                 "id": pick.sample.id,
                 "role": pick.sample.role,
-                "path": None if pick.sample.path is None else str(pick.sample.path),
                 "duration": pick.sample.duration,
                 "synth": pick.sample.synth,
-                "superdirt": pick.superdirt,
                 "long": pick.long,
             }
             for layer in LAYERS
@@ -319,12 +306,7 @@ def _pick_samples(
             )
         sizes[layer] = len(candidates)
         chosen = random.Random(f"{sample_seed}:{layer}").sample(candidates, min(pool.count, len(candidates)))
-        picks[layer] = [
-            Pick(layer=layer, name=f"wtpm_{layer}", sample=sample, long=preset.is_long(sample), index=k)
-            if layer == SHARED_LAYER
-            else Pick(layer=layer, name=f"wtpm_{layer}_{k + 1}", sample=sample, long=preset.is_long(sample))
-            for k, sample in enumerate(chosen)
-        ]
+        picks[layer] = [Pick(layer=layer, sample=sample, long=preset.is_long(sample)) for sample in chosen]
     return picks, sizes
 
 
