@@ -304,7 +304,8 @@ def test_motif_pitch_is_the_pos_frequency_rank(pilger, score):
 
 
 def _motif_gain(pos):
-    return PRESET_DATA["motif"]["gain"]["function" if pos in PRESET_DATA["function_pos"] else "content"]
+    level = PRESET_DATA["mix"]["motiv"]
+    return round(level * PRESET_DATA["motif"]["gain"]["function" if pos in PRESET_DATA["function_pos"] else "content"], 4)
 
 
 ALL_LENGTHS = tuple(range(2, 9))

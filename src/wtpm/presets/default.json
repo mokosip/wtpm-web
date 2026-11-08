@@ -18,7 +18,7 @@
     "boegen": {"roles": ["pad", "drone", "texture", "field"], "samples": 3, "long_only": true},
     "leitwort": {"roles": ["fx", "perc"], "samples": 3}
   },
-  "mix": {"puls": 1.0, "bass": 0.708, "motiv": 1.0, "boegen": 0.75, "leitwort": 0.8},
+  "mix": {"puls": 1.0, "bass": 0.708, "motiv": 0.75, "boegen": 0.75, "leitwort": 0.8},
   "long": {"min_seconds": 1.5, "roles": ["stab", "lead", "pad", "drone", "texture", "noise", "field"]},
   "puls": {"min_hits": 2, "gain": [0.6, 0.95]},
   "motif": {
