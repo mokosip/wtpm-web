@@ -3,6 +3,7 @@
 - Deployable web version of the Written Text Pattern Machine: a German text becomes a pattern, played in the browser with Strudel.
 - Analysis and composition are copied from the private `written-text-pattern-machine` (commit `f900fde`).
 - License: AGPL-3.0-or-later (Strudel is AGPL-3.0); see `LICENSE`.
+- Example and default text: Heinrich Heine, "Ein Fichtenbaum steht einsam" (Buch der Lieder, 1827; public domain), wording as in the first edition ([Wikisource](https://de.wikisource.org/wiki/Ein_Fichtenbaum_steht_einsam)); `examples/heine-ein-fichtenbaum.txt`.
 
 ## Samples
 

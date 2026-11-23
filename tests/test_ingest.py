@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from pathlib import Path
 
 import pytest
 
@@ -13,7 +14,9 @@ from wtpm.export import to_json
 from wtpm.ingest import build_document
 from wtpm.pipeline import DEFAULT_MODELS, Pipeline
 
-POEM = "Der leise Fluss trägt Steine.\nDer unruhige Ozean trägt Schiffe.\n"
+POEM = "Ein Fichtenbaum steht einsam\nIm Norden auf kahler Höh’.\n"
+# Heinrich Heine, "Ein Fichtenbaum steht einsam" (1827), public domain.
+HEINE = (Path(__file__).parents[1] / "examples" / "heine-ein-fichtenbaum.txt").read_text(encoding="utf-8")
 
 
 @pytest.fixture(scope="module")
@@ -69,17 +72,12 @@ def test_paragraphs_group_blank_line_separated_blocks(pipeline):
 
 
 def test_blank_lines_do_not_become_sentences(pipeline):
-    text = (
-        "Der leise Fluss trägt Steine.\nDer unruhige Ozean trägt Schiffe.\n\n"
-        "Am Ufer steht ein alter Mann,\ner zählt die Wellen, zählt sie kaum.\n\n"
-        "Die Steine ruhn im kühlen Grund.\n"
-    )
-    document = pipeline.analyze(text).document
-    assert [text[s.start : s.end] for s in document.sentences] == [
-        "Der leise Fluss trägt Steine.",
-        "Der unruhige Ozean trägt Schiffe.",
-        "Am Ufer steht ein alter Mann,\ner zählt die Wellen, zählt sie kaum.",
-        "Die Steine ruhn im kühlen Grund.",
+    document = pipeline.analyze(HEINE).document
+    assert [HEINE[s.start : s.end] for s in document.sentences] == [
+        "Ein Fichtenbaum steht einsam\nIm Norden auf kahler Höh’.",
+        "Ihn schläfert;",
+        "mit weißer Decke\nUmhüllen ihn Eis und Schnee.",
+        "Er träumt von einer Palme,\nDie, fern im Morgenland,\nEinsam und schweigend trauert\nAuf brennender Felsenwand.",
     ]
     assert sorted(i for s in document.sentences for i in s.token_ids) == sorted(t.id for t in document.tokens)
 

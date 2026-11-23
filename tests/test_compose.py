@@ -402,7 +402,12 @@ def test_an_immediately_repeated_word_echoes_on_the_repetition(pipeline):
 
 
 def test_leitwort_marks_every_occurrence_of_a_repeated_content_lemma(pipeline):
-    text = (Path(__file__).parents[1] / "examples" / "gedicht.txt").read_text(encoding="utf-8")
+    # Constructed lines: three content lemmas repeated twice each (tragen, Stein, zählen).
+    text = (
+        "Der leise Fluss trägt Steine.\nDer unruhige Ozean trägt Schiffe.\n\n"
+        "Am Ufer steht ein alter Mann,\ner zählt die Wellen, zählt sie kaum.\n\n"
+        "Die Steine ruhn im kühlen Grund.\n"
+    )
     scored = run(pipeline.analyze(text).to_dict())
     leitwort, picked = layer(scored, "leitwort"), _picked(scored, "leitwort")
     by_lemma: dict[str, list[dict]] = {}

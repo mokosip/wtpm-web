@@ -1,13 +1,16 @@
 "use strict";
 
 const TEXT_KEY = "wtpm.sound.text";
-const DEFAULT_TEXT = `Der leise Fluss trägt Steine.
-Der unruhige Ozean trägt Schiffe.
+// Heinrich Heine, "Ein Fichtenbaum steht einsam" (Buch der Lieder, 1827), public domain.
+const DEFAULT_TEXT = `Ein Fichtenbaum steht einsam
+Im Norden auf kahler Höh’.
+Ihn schläfert; mit weißer Decke
+Umhüllen ihn Eis und Schnee.
 
-Am Ufer steht ein alter Mann,
-er zählt die Wellen, zählt sie kaum.
-
-Die Steine ruhn im kühlen Grund.`;
+Er träumt von einer Palme,
+Die, fern im Morgenland,
+Einsam und schweigend trauert
+Auf brennender Felsenwand.`;
 
 const LAYERS = {
   puls: { label: "Puls", key: "A" },
