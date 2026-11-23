@@ -78,6 +78,8 @@ function setStatus(id, text, isError = false) {
 const soundStatus = (text, isError) => setStatus("soundStatus", text, isError);
 
 function startStrudel() {
+  // iOS Safari mutes web audio with the silent switch unless the page plays as media (Safari 17+).
+  if (navigator.audioSession) navigator.audioSession.type = "playback";
   state.ready = fetch("/api/samples")
     .then((response) => response.json())
     .then(({ base, map }) => initStrudel({ prebake: () => samples(map, base) }));
