@@ -4,6 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>WTPM · Sound</title>
+  <script>
+    // Embedded in a host page (?embed=1 inside a frame): switch to the quiet theme
+    // before the first paint, not after the Strudel bundle has loaded.
+    if (new URLSearchParams(location.search).has("embed") && window.parent !== window) {
+      document.documentElement.classList.add("embed");
+    }
+  </script>
   <link rel="stylesheet" href="/sound.css" />
 </head>
 <body>

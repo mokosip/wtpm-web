@@ -19,12 +19,10 @@ const LAYERS = {
 
 const el = (id) => document.getElementById(id);
 
-// Embedded in a host page (?embed=1 inside a frame, e.g. moko's website): the host
-// supplies title and frame, the page takes the host's quieter look (see .embed in
-// sound.css), and Esc is passed up because key presses inside a frame never reach it.
-const embedded = new URLSearchParams(location.search).has("embed") && window.parent !== window;
-if (embedded) {
-  document.documentElement.classList.add("embed");
+// Embedded in a host page: sound.html's head sets .embed before the first paint (see
+// .embed in sound.css). Esc is passed up because key presses inside a frame never
+// reach the host.
+if (document.documentElement.classList.contains("embed")) {
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") window.parent.postMessage({ type: "moko:close" }, "*");
   });
