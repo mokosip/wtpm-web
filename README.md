@@ -32,7 +32,8 @@
 ## Container
 
 - `docker build -t wtpm-web .` then `docker run -p 8000:8000 wtpm-web`; the server listens on `$PORT` (default 8000) on all interfaces and runs as `nobody`.
-- Torch comes from the PyTorch CPU index on Linux (`tool.uv.sources`), so the image carries no CUDA libraries; it is still about 3 GB (Torch + the German transformer model) and the server needs about 750 MB of memory after the first request.
+- Torch comes from the PyTorch CPU index on Linux (`tool.uv.sources`), so the image carries no CUDA libraries; it is still about 3 GB (3.15 GB measured) because of Torch and the German transformer model.
+- Memory: about 1.25 GB, constant, because the model stays loaded. Measured in the container (23 Nov 2026): 1251 MB after loading, 1267 MB peak with a 2000-character text (linux/arm64); 1160 / 1247 MB on linux/amd64 (emulated). Run it with at least 1.6 GB available to the container.
 
 ## Development
 
