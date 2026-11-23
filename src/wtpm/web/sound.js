@@ -18,6 +18,17 @@ const LAYERS = {
 };
 
 const el = (id) => document.getElementById(id);
+
+// Embedded in a host page (?embed=1 inside a frame, e.g. moko's website): the host
+// supplies title and frame, the page takes the host's quieter look (see .embed in
+// sound.css), and Esc is passed up because key presses inside a frame never reach it.
+const embedded = new URLSearchParams(location.search).has("embed") && window.parent !== window;
+if (embedded) {
+  document.documentElement.classList.add("embed");
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") window.parent.postMessage({ type: "moko:close" }, "*");
+  });
+}
 const pad2 = (n) => String(n).padStart(2, "0");
 
 const state = {
@@ -474,19 +485,25 @@ function drawScope() {
   const peak = Math.max(...amplitude, 0.001);
   const column = width / amplitude.length;
   const middle = height / 2;
-  context.strokeStyle = "rgba(79, 179, 169, 0.35)";
+  // Colours from the CSS tokens, so the embedded theme can restyle the scope.
+  const css = getComputedStyle(document.documentElement);
+  const accent = css.getPropertyValue("--orange").trim();
+  const wave = css.getPropertyValue("--teal").trim();
+  context.strokeStyle = wave;
+  context.globalAlpha = 0.35;
   context.beginPath();
   context.moveTo(0, middle);
   context.lineTo(width, middle);
   context.stroke();
+  context.globalAlpha = 1;
   amplitude.forEach((value, index) => {
     const reach = (value / peak) * (middle - 8);
-    context.fillStyle = index === state.slot ? "#ec5a29" : "#4fb3a9";
+    context.fillStyle = index === state.slot ? accent : wave;
     const x = index * column + column * 0.2;
     context.fillRect(x, middle - reach, Math.max(1, column * 0.6), reach * 2 || 1);
   });
   if (state.slot !== null) {
-    context.fillStyle = "#ec5a29";
+    context.fillStyle = accent;
     context.fillRect(state.slot * column + column / 2 - 1, 4, 2, height - 8);
   }
 }

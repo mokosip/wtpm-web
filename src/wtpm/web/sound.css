@@ -447,3 +447,70 @@ textarea:focus { outline: none; background-color: #fff; }
   .rule-source, .rule-result { grid-column: 3; }
   .sticker { right: -0.5rem; width: 6.5rem; height: 6.5rem; font-size: 0.95rem; }
 }
+
+/* ---------- Embedded (?embed=1 in a frame) ----------
+   The host page's language: pale paper, dark ink, one accent (violet), sentence
+   case, hairlines instead of hard shadows. Same markup and behaviour. */
+.embed {
+  --paper: #f3f2ee;
+  --panel: transparent;
+  --ink: #1b1c1e;
+  --muted: #5d5f63;
+  --orange: #7b4bf0;
+  --teal: #b9a6f7;
+  --screen: #1b1c1e;
+  --line: #cfccc4;
+  --stroke: 1px solid var(--line);
+  --font: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+}
+.embed body { padding: 8px 24px 24px; text-transform: none; letter-spacing: 0; }
+.embed .sticker, .embed .device-top, .embed .speaker, .embed .brand-sub, .embed .sheet-spine { display: none; }
+.embed .stage { border: 0; border-radius: 0; padding: 0; background: none; }
+.embed .rig { grid-template-columns: minmax(18rem, 24rem) minmax(16rem, 1fr); gap: 28px; }
+.embed .device { background: none; border: var(--stroke); border-radius: 6px; box-shadow: none; overflow: hidden; }
+.embed .device-head { background: none; border-bottom: var(--stroke); padding: 12px 14px; }
+.embed .brand-name { font-size: 15px; font-weight: 500; letter-spacing: 0; }
+.embed .brand-name::after { content: " · text into rhythm"; color: var(--muted); font-weight: 400; }
+.embed .screen-tab { display: none; }
+.embed .screen { border-bottom: var(--stroke); border-radius: 0; }
+.embed .screen-box { border-width: 1px; }
+.embed .key { width: 2.6rem; height: 2.6rem; border: var(--stroke); background: var(--paper); box-shadow: none; }
+.embed .key:hover:not(:disabled) { border-color: var(--muted); }
+.embed .key:active:not(:disabled), .embed body.playing .key.play { transform: none; }
+.embed .key.play { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.embed .pad { border: var(--stroke); background: var(--paper); color: var(--ink); box-shadow: none; border-radius: 6px; }
+.embed .pad:active { transform: none; }
+.embed .pad.muted { background: none; color: var(--muted); }
+.embed .pad-label { font-size: 0.62rem; }
+.embed .sheet { border: var(--stroke); border-radius: 6px; background: none; box-shadow: none; overflow: hidden; }
+.embed .sheet-head { background: none; color: var(--muted); border-bottom: var(--stroke); font-size: 12px; }
+.embed textarea { background: transparent; font-size: 0.9rem; }
+.embed textarea:focus { background: transparent; }
+.embed .sheet-foot { border-top: var(--stroke); }
+.embed .pill { border: 0; background: var(--ink); color: var(--paper); box-shadow: none; font-size: 13px; }
+.embed .pill:hover { background: var(--orange); }
+.embed .pill:active { transform: none; }
+.embed .song { margin-top: 28px; padding: 0; }
+.embed .card-tab { background: none; color: var(--muted); border: 0; box-shadow: none; padding: 0 0 4px; margin: 0; font-size: 12px; }
+.embed .card-body { background: none; border: var(--stroke); border-radius: 6px; box-shadow: none; }
+.embed .card.now .card-body { background: rgba(123, 75, 240, .06); border-color: var(--orange); }
+.embed .card.now .card-tab { background: none; color: var(--orange); }
+.embed .cell.beat { border-left-color: var(--muted); }
+.embed .captions { font-size: 13px; color: var(--muted); gap: 24px; margin: 24px 0; }
+.embed .manual { border: var(--stroke); border-left: var(--stroke); border-radius: 6px; background: none; margin-top: 32px; }
+.embed .manual-tab { position: static; display: block; background: none; color: var(--muted); border: 0; border-bottom: var(--stroke); padding: 8px 12px; font-size: 12px; }
+.embed .dial { background: var(--paper); box-shadow: none; }
+/* The licence link stays visible when embedded, as a quiet line under the page. */
+.embed body { display: flex; flex-direction: column; }
+.embed .top { display: flex; order: 99; margin: 24px 0 0; font-size: 12px; color: var(--muted); gap: 12px; }
+.embed .top a { color: var(--muted); border-bottom: 1px solid var(--line); }
+.embed .led { background: var(--line); }
+.embed .lane-key { background: none; color: var(--muted); border: var(--stroke); }
+@media (max-width: 900px) { .embed .rig { grid-template-columns: 1fr; } }
+@media (max-width: 520px) {
+  .embed body { padding: 6px 12px 20px; }
+  .embed .pads { gap: 0.35rem; grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .embed .rig, .embed .device, .embed .sheet { min-width: 0; }
+  .embed .pad { min-width: 0; padding: 0.25rem; }
+  .embed .pad-label { font-size: 0.55rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+}
