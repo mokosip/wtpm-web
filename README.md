@@ -9,6 +9,7 @@
 ## Samples
 
 - Every sample is a Dirt-Sample at a pinned commit (`DIRT_COMMIT` in `src/wtpm/manifest.py`); the browser loads it from GitHub, nothing is hosted here.
+- Credits: `bass2` by NoizeMassacre (Freesound, [CC Sampling+ 1.0](https://creativecommons.org/licenses/sampling+/1.0/), author credit required); `bass1` by DaveN and `bass3` by zgump (Freesound, CC0). Most other Dirt-Samples folders have no stated licence ([Dirt-Samples#19](https://github.com/tidalcycles/Dirt-Samples/issues/19)). The page header carries the same credit.
 - `src/wtpm/samples.json` lists each usable sample with its role, length, Strudel sound name (`<folder>_<file stem>`, one file per name) and file; the bass is the Strudel synth `sawtooth`.
 - Rebuild it from the local samplebank roles (`~/tidal/samples/samplebank.json` and its analysis cache): `uv run python -m wtpm.manifest`. Samples missing at the pinned commit are listed under `missing`.
 - The composer draws only from this manifest; the same text and sample seed draw the same samples.
