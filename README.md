@@ -4,6 +4,7 @@
 - Analysis and composition are copied from the private `written-text-pattern-machine` (commit `f900fde`).
 - License: AGPL-3.0-or-later (Strudel is AGPL-3.0); see `LICENSE`.
 - Example and default text: Heinrich Heine, "Ein Fichtenbaum steht einsam" (Buch der Lieder, 1827; public domain), wording as in the first edition ([Wikisource](https://de.wikisource.org/wiki/Ein_Fichtenbaum_steht_einsam)); `examples/heine-ein-fichtenbaum.txt`.
+- Visual design inspired by the EP–133 K.O. II by teenage engineering. Not affiliated with or endorsed by teenage engineering; all names are theirs.
 
 ## Samples
 
